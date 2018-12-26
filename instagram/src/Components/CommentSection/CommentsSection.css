@@ -1,0 +1,15 @@
+.comments__icons {
+  display: flex;
+  height: 50px;
+  margin: 6px 2.8% 0;
+}
+
+.comment__icon {
+  width: 27px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.comment {
+  width: 30px;
+}
