@@ -8,7 +8,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      dummyData: dummyData
+      dummyData: dummyData,
+      inputText: ""
     };
   }
   render() {
