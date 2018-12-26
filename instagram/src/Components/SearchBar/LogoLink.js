@@ -1,7 +1,7 @@
 import React from "react";
 import "./SearchBar.css";
 
-const LogoLink = _ => {
+const LogoLink = () => {
   return (
     <div className="logo__links">
       <div className="instagram-icon-logo">

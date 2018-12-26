@@ -1,10 +1,10 @@
-import React from "react";
+import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import "./PostContainer.css";
 
 const Post = props => {
   return (
-    <React.Fragment>
+    <Fragment>
       <div className="post__icon">
         <div className="thumbnail">
           <img src={props.thumbnailUrl} alt="" />
@@ -12,7 +12,7 @@ const Post = props => {
         <a href="index.html">{props.username}</a>
       </div>
       <img src={props.imageUrl} alt="" />
-    </React.Fragment>
+    </Fragment>
   );
 };
 

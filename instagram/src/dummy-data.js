@@ -77,6 +77,28 @@ const dummyData = [
         text: "I like how Half Dome looks so old and useless"
       }
     ]
+  },
+  {
+    username: "nathanthomas",
+    thumbnailUrl:
+      "https://media1.popsugar-assets.com/files/thumbor/4pA9G0Iqd9NkAzTGprztye_AbRI/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2015/03/06/145/n/4852708/739b036ebaf0da9d_10986022_1536428393289696_1441506879_n/i/Hot-Men-Coffee-Instagram-Pictures.jpg",
+    imageUrl: "http://blog.ink361.com/wp-content/uploads/2015/02/jcgolfing.jpg",
+    likes: 389,
+    timestamp: "July 20th 2017, 10:32:10 am",
+    comments: [
+      {
+        username: "playhearthstone",
+        text: "This is such an awesome shot!"
+      },
+      {
+        username: "awaywetravel",
+        text: "Next time, please take me with you!"
+      },
+      {
+        username: "awesomebt28",
+        text: "Dude, that's so sick. Nice shot!"
+      }
+    ]
   }
 ];
 
