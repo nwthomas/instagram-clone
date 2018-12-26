@@ -1,0 +1,34 @@
+.post__container {
+  max-width: 604px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.post__icon {
+  margin-top: 40px;
+  height: 45px;
+  display: flex;
+  padding: 18px 3% 0;
+  border-top: 1px solid #e2e2e2;
+  border-left: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+}
+
+.post__icon a {
+  margin: 8px 1.9%;
+  text-decoration: none;
+  color: #252328;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.thumbnail {
+  display: inline-block;
+  width: 30px;
+}
+
+.thumbnail img {
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+}
