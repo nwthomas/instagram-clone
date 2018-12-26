@@ -28,11 +28,13 @@
 }
 
 .comments__container {
-  margin: 13px 0;
+  margin: 13px 2.6% 50px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e2e2e2;
 }
 
 .user__comment {
-  margin: 10px 2.6% 0;
+  margin: 10px 0 0;
   width: 94.8%;
   display: flex;
 }

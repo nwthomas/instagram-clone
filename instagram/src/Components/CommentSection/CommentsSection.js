@@ -25,6 +25,12 @@ const CommentsSection = props => {
           />
         ))}
       </div>
+      <input
+        type="text"
+        className="comment__input"
+        name="inputText"
+        placeholder="Add a comment..."
+      />
     </div>
   );
 };
