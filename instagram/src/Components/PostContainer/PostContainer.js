@@ -21,7 +21,7 @@ const PostContainer = props => {
             likes={post.likes}
             username={post.username}
             comments={post.comments}
-            timePosted={post.timestamp}
+            timestamp={post.timestamp}
             key={"comments" + index}
           />
         </React.Fragment>

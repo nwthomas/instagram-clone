@@ -25,6 +25,7 @@ const CommentsSection = props => {
           />
         ))}
       </div>
+      <p className="post__timestamp">{props.timestamp}</p>
       <input
         type="text"
         className="comment__input"

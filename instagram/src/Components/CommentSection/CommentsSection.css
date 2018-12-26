@@ -33,8 +33,15 @@
 }
 
 .comments__container {
-  margin: 13px 2.6%;
-  padding-bottom: 15px;
+  margin: 13px 2.6% 10px;
+}
+
+.post__timestamp {
+  display: block;
+  padding-bottom: 12px;
+  margin: 0 2.6% 14px;
+  font-size: 1.1rem;
+  color: #8e8e8e;
   border-bottom: 1px solid #e2e2e2;
 }
 
