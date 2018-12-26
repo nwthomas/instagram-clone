@@ -1,10 +1,11 @@
 import React from "react";
+import "./CommentsSection.css";
 
 const Comment = props => {
   return (
-    <div className="comment">
+    <div className="user__comment">
       <a href="index.html">{props.username}</a>
-      <p className="comment">{props.comment}</p>
+      <p>{props.text}</p>
     </div>
   );
 };

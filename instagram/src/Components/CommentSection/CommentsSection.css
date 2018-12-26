@@ -1,7 +1,14 @@
+.comments__section {
+  border-bottom: 1px solid #e2e2e2;
+  border-left: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  width: 100%;
+}
+
 .comments__icons {
   display: flex;
-  height: 50px;
-  margin: 6px 2.8% 0;
+  height: 30px;
+  margin: 6px 2.4% 0;
 }
 
 .comment__icon {
@@ -12,4 +19,33 @@
 
 .comment {
   width: 30px;
+}
+
+.likes {
+  margin: 4px 0 0 2.6%;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.comments__container {
+  margin: 13px 0;
+}
+
+.user__comment {
+  margin: 10px 2.6% 0;
+  width: 94.8%;
+  display: flex;
+}
+
+.user__comment a {
+  text-decoration: none;
+  color: #252328;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.user__comment p {
+  margin-left: 5px;
+  width: 100%;
+  font-size: 1.4rem;
 }
