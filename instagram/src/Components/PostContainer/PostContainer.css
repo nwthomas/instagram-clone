@@ -12,6 +12,12 @@
   border-top: 1px solid #e2e2e2;
   border-left: 1px solid #e2e2e2;
   border-right: 1px solid #e2e2e2;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  -moz-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -moz-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
 }
 
 .post__icon a {

@@ -2,13 +2,18 @@
   border-bottom: 1px solid #e2e2e2;
   border-left: 1px solid #e2e2e2;
   border-right: 1px solid #e2e2e2;
-  width: 100%;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  -moz-border-bottom-left-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-bottom-left-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
 }
 
 .comments__icons {
   display: flex;
   height: 30px;
-  margin: 6px 2.4% 0;
+  padding: 6px 2.4% 0;
 }
 
 .comment__icon {
@@ -58,4 +63,5 @@
   height: 25px;
   font-size: 1.4rem;
   border: none;
+  outline: none;
 }
