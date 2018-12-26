@@ -2,6 +2,7 @@ import React from "react";
 import heartIcon from "../../images/heart-icon.svg";
 import commentIcon from "../../images/comment-icon.png";
 import Comment from "./Comment";
+import PropTypes from "prop-types";
 import "./CommentsSection.css";
 
 const CommentsSection = props => {
@@ -34,6 +35,13 @@ const CommentsSection = props => {
       />
     </div>
   );
+};
+
+CommentsSection.propTypes = {
+  username: PropTypes.string,
+  timestamp: PropTypes.string,
+  text: PropTypes.string,
+  likes: PropTypes.number
 };
 
 export default CommentsSection;

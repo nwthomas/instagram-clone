@@ -1,14 +1,14 @@
 import React from "react";
 import Post from "./Post";
 import CommentsSection from "../CommentSection/CommentsSection";
+import PropTypes from "prop-types";
 import "./PostContainer.css";
 
 const PostContainer = props => {
-  console.log(props.dummyDataOnProps);
   return (
     <div className="post__container">
       {props.dummyDataOnProps.map((post, index) => (
-        <React.Fragment>
+        <React.Fragment key={"fragment" + index}>
           <Post
             username={post.username}
             thumbnailUrl={post.thumbnailUrl}
@@ -28,6 +28,20 @@ const PostContainer = props => {
       ))}
     </div>
   );
+};
+
+PostContainer.propTypes = {
+  username: PropTypes.string,
+  thumbnailUrl: PropTypes.string,
+  imageUrl: PropTypes.string,
+  timestamp: PropTypes.string,
+  comments: PropTypes.arrayOf(
+    PropTypes.shape({
+      username: PropTypes.string,
+      text: PropTypes.string
+    })
+  ),
+  likes: PropTypes.number
 };
 
 export default PostContainer;

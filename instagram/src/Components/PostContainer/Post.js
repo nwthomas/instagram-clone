@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./PostContainer.css";
 
 const Post = props => {
@@ -13,6 +14,12 @@ const Post = props => {
       <img src={props.imageUrl} alt="" />
     </React.Fragment>
   );
+};
+
+Post.prototypes = {
+  thumbnailUrl: PropTypes.string,
+  username: PropTypes.string,
+  imageUrl: PropTypes.string
 };
 
 export default Post;
