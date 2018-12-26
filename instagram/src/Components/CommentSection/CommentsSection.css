@@ -28,7 +28,7 @@
 }
 
 .comments__container {
-  margin: 13px 2.6% 50px;
+  margin: 13px 2.6%;
   padding-bottom: 15px;
   border-bottom: 1px solid #e2e2e2;
 }
@@ -50,4 +50,12 @@
   margin-left: 5px;
   width: 100%;
   font-size: 1.4rem;
+}
+
+.comment__input {
+  margin: 0 2.6% 16px;
+  width: 94.2%;
+  height: 25px;
+  font-size: 1.4rem;
+  border: none;
 }
