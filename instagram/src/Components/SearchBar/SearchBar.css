@@ -17,6 +17,7 @@
 .instagram-icon-logo {
   margin: 38px 0 0 5%;
   width: 80px;
+  cursor: pointer;
 }
 
 .divider-line {
@@ -30,6 +31,7 @@
   margin: 35px 0 0 6.5%;
   width: 240px;
   color: black;
+  cursor: pointer;
 }
 
 .search-field {
@@ -50,4 +52,5 @@
   top: 0;
   right: 0;
   margin: 60px 2% 0 0;
+  cursor: pointer;
 }
