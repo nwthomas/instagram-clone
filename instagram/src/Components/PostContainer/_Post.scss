@@ -1,8 +1,7 @@
 .post__container {
   max-width: 604px;
   width: 100%;
-  margin: 0 auto;
-  padding-bottom: 50px;
+  margin: 0 auto 50px;
 }
 
 .post__icon {
@@ -19,6 +18,7 @@
   -webkit-border-top-right-radius: 3px;
   -moz-border-top-left-radius: 3px;
   -webkit-border-top-right-radius: 3px;
+  background: white;
 }
 
 .post__icon a {

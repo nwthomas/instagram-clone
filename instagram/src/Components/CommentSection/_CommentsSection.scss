@@ -8,6 +8,7 @@
   -webkit-border-bottom-right-radius: 3px;
   -moz-border-bottom-left-radius: 3px;
   -webkit-border-bottom-right-radius: 3px;
+  background: white;
 }
 
 .comments__icons {
@@ -20,6 +21,13 @@
   width: 27px;
   margin-right: 12px;
   cursor: pointer;
+
+  svg {
+    padding: 0 15% 0;
+    g {
+      transform: scale(0.05);
+    }
+  }
 }
 
 .comment {
@@ -71,4 +79,9 @@
   font-size: 1.4rem;
   border: none;
   outline: none;
+}
+
+#svg_3 {
+  fill: red;
+  opacity: 0.5;
 }

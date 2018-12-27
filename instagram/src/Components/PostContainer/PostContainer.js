@@ -1,34 +1,34 @@
-import React, { Fragment, Component } from "react";
+import React, { Fragment } from "react";
 import Post from "./Post";
 import CommentsSection from "../CommentSection/CommentsSection";
 import PropTypes from "prop-types";
 import "./_Post.scss";
 
-export default class PostContainer extends Component {
-  render() {
-    return (
-      <div className="post__container">
-        {this.props.dummyDataOnProps.map((post, index) => (
-          <Fragment key={"fragment" + index}>
-            <Post
-              username={post.username}
-              thumbnailUrl={post.thumbnailUrl}
-              imageUrl={post.imageUrl}
-              key={"post" + index}
-            />
-            <CommentsSection
-              likes={post.likes}
-              username={post.username}
-              comments={post.comments}
-              timestamp={post.timestamp}
-              key={"comments" + index}
-            />
-          </Fragment>
-        ))}
-      </div>
-    );
-  }
-}
+const PostContainer = props => {
+  return (
+    <div className="post__container">
+      {props.dummyDataOnProps.map((post, index) => (
+        <Fragment key={"fragment" + index}>
+          <Post
+            username={post.username}
+            thumbnailUrl={post.thumbnailUrl}
+            imageUrl={post.imageUrl}
+            key={"post" + index}
+          />
+          <CommentsSection
+            isClicked={props.isClicked}
+            heartClick={props.heartClick}
+            likes={post.likes}
+            username={post.username}
+            comments={post.comments}
+            timestamp={post.timestamp}
+            key={"comments" + index}
+          />
+        </Fragment>
+      ))}
+    </div>
+  );
+};
 
 PostContainer.propTypes = {
   username: PropTypes.string,
@@ -43,3 +43,5 @@ PostContainer.propTypes = {
   ),
   likes: PropTypes.number
 };
+
+export default PostContainer;

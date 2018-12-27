@@ -4,6 +4,8 @@
   border-bottom: 2px solid #e2e2e2;
   display: flex;
   position: relative;
+  background: white;
+  z-index: 100;
 }
 
 .logo__links {
@@ -42,7 +44,8 @@
   border-radius: 6px;
   text-align: center;
   font-size: 3rem;
-  background: #f9f9f9 url(../../images/search.svg) no-repeat scroll 1px 1px;
+  background: lighten(#f9f9f9, 100%) url(../../images/search.svg) no-repeat
+    scroll 1px 1px;
   background-size: 6%;
   background-position: 135px 15px;
 }

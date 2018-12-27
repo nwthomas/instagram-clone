@@ -9,15 +9,22 @@ export default class App extends Component {
     super(props);
     this.state = {
       dummyData: [],
-      inputText: ""
+      inputText: "",
+      isClicked: false
     };
   }
 
   componentDidMount() {
     setTimeout(() => {
       this.setState({ dummyData: dummyData });
-    }, 4000);
+    }, 100);
   }
+
+  heartClick = () => {
+    this.setState(prevState => ({
+      isClicked: !prevState.isClicked
+    }));
+  };
 
   render() {
     return (
@@ -27,7 +34,11 @@ export default class App extends Component {
           {this.state.dummyData.length === 0 ? (
             <h1 className="loading__text">loading...</h1>
           ) : (
-            <PostContainer dummyDataOnProps={this.state.dummyData} />
+            <PostContainer
+              dummyDataOnProps={this.state.dummyData}
+              isClicked={this.state.isClicked}
+              heartClick={this.heartClick}
+            />
           )}
         </Fragment>
       </div>
