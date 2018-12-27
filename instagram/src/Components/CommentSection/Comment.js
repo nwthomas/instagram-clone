@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./CommentsSection.css";
+import "./_CommentsSection.scss";
 
 const Comment = props => {
   return (

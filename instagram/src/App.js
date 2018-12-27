@@ -2,7 +2,7 @@ import React, { Component, Fragment } from "react";
 import { SearchBarContainer } from "./Components/SearchBar";
 import { PostContainer } from "./Components/PostContainer";
 import dummyData from "./dummy-data";
-import "./App.css";
+import "../src/Components/style/App.scss";
 
 export default class App extends Component {
   constructor(props) {

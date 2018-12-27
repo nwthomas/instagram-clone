@@ -2,12 +2,9 @@ import React, { Fragment, Component } from "react";
 import Post from "./Post";
 import CommentsSection from "../CommentSection/CommentsSection";
 import PropTypes from "prop-types";
-import "./PostContainer.css";
+import "./_Post.scss";
 
 export default class PostContainer extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <div className="post__container">

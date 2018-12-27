@@ -1,5 +1,5 @@
 import React from "react";
-import "./SearchBar.css";
+import "./_SearchBar.scss";
 
 const SearchField = props => {
   return (

@@ -3,7 +3,7 @@ import heartIcon from "../../images/heart-icon.svg";
 import commentIcon from "../../images/comment-icon.png";
 import Comment from "./Comment";
 import PropTypes from "prop-types";
-import "./CommentsSection.css";
+import "./_CommentsSection.scss";
 
 const CommentsSection = props => {
   return (
