@@ -28,6 +28,12 @@ code {
   width: 100%;
 }
 
+.body__content {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .loading__text {
   display: block;
   margin: 0 auto;

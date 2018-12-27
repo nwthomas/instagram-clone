@@ -1,11 +1,11 @@
 .post__container {
-  max-width: 604px;
+  max-width: 615px;
   width: 100%;
-  margin: 0 auto 50px;
+  margin: 0 0 50px 3.2%;
 }
 
 .post__icon {
-  margin-top: 116px;
+  margin-top: 50px;
   height: 45px;
   display: flex;
   padding: 18px 3% 0;
@@ -19,6 +19,10 @@
   -moz-border-top-left-radius: 3px;
   -webkit-border-top-right-radius: 3px;
   background: white;
+}
+
+.post__icon:first-child {
+  margin-top: 136px;
 }
 
 .post__icon a {

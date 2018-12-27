@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import { SearchBarContainer } from "./Components/SearchBar";
 import { PostContainer } from "./Components/PostContainer";
 import dummyData from "./dummy-data";
@@ -30,7 +30,7 @@ export default class App extends Component {
     return (
       <div className="App">
         <SearchBarContainer />
-        <Fragment>
+        <div className="body__content">
           {this.state.dummyData.length === 0 ? (
             <h1 className="loading__text">loading...</h1>
           ) : (
@@ -40,7 +40,7 @@ export default class App extends Component {
               heartClick={this.heartClick}
             />
           )}
-        </Fragment>
+        </div>
       </div>
     );
   }
