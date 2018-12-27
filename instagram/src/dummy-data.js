@@ -87,8 +87,8 @@ const dummyData = [
     timestamp: "July 20th 2017, 10:32:10 am",
     comments: [
       {
-        username: "playhearthstone",
-        text: "This is such an awesome shot!"
+        username: "nathanthomas",
+        text: "This shot makes me feel at peace!"
       },
       {
         username: "awaywetravel",
@@ -97,6 +97,25 @@ const dummyData = [
       {
         username: "awesomebt28",
         text: "Dude, that's so sick. Nice shot!"
+      }
+    ]
+  },
+  {
+    username: "coffee__nut",
+    thumbnailUrl:
+      "https://www.sequoitmedia.com/wp-content/uploads/2015/03/demi-lovato-2-495.jpg",
+    imageUrl:
+      "https://www.seriouseats.com/2018/06/20180613-coffee-vs-espresso-vicky-wasik-3.jpg",
+    likes: 4871,
+    timestamp: "July 22th 2017, 2:10:58 pm",
+    comments: [
+      {
+        username: "coffee__nut",
+        text: "Man, I'm super thirsty now..."
+      },
+      {
+        username: "awaywetravel",
+        text: "Let's go there on Thursday!"
       }
     ]
   }

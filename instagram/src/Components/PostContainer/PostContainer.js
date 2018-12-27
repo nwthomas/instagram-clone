@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 import "./_Post.scss";
 
 const PostContainer = props => {
+  console.log(props.comments);
   return (
     <div className="post__container">
       {props.dummyDataOnProps.map((post, index) => (
@@ -16,13 +17,15 @@ const PostContainer = props => {
             key={"post" + index}
           />
           <CommentsSection
+            addNewComment={event => props.addNewComment(event, index)}
             isClicked={props.isClicked}
             heartClick={props.heartClick}
             likes={post.likes}
-            username={post.username}
-            comments={post.comments}
+            comments={props.comments[index]}
             timestamp={post.timestamp}
             key={"comments" + index}
+            postComment={props.postComment}
+            inputText={props.inputText}
           />
         </Fragment>
       ))}

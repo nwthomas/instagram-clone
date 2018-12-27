@@ -42,3 +42,32 @@ code {
   margin-top: 150px;
   text-align: center;
 }
+
+.container {
+  height: 140px;
+  width: 140px;
+  margin: 100px auto;
+  position: relative;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-img__container {
+  width: 100px;
+  margin: 30vh auto 0;
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-iteration-count: 5;
+
+  .loading-img {
+    fill: #e2e2e2;
+    opacity: 0.8;
+  }
+}

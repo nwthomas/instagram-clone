@@ -72,13 +72,30 @@
   font-size: 1.4rem;
 }
 
-.comment__input {
-  margin: 0 2.6% 16px;
-  width: 94.2%;
-  height: 25px;
-  font-size: 1.4rem;
-  border: none;
-  outline: none;
+.comment__box {
+  display: flex;
+  justify-content: space-between;
+  width: 95.6%;
+  margin: 0 0 16px 2.6%;
+
+  .comment__input {
+    width: 365%;
+    height: 25px;
+    font-size: 1.4rem;
+    border: none;
+    outline: none;
+  }
+
+  .comment__input.text:focus:focus {
+    background: white;
+  }
+
+  img {
+    width: 4%;
+    height: 15px;
+    margin-top: 9px;
+    cursor: pointer;
+  }
 }
 
 #svg_3 {

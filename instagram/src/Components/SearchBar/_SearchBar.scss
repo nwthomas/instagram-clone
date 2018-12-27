@@ -12,7 +12,6 @@
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
-    border-bottom: 2px solid #e2e2e2;
     display: flex;
     position: relative;
 
@@ -46,16 +45,18 @@
 
     .search-field {
       margin: 25px auto 0;
-      width: 215px;
-      height: 25px;
+      width: 210px;
+      height: 23px;
       border: 2px solid #e2e2e2;
-      border-radius: 6px;
+      border-radius: 3px;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
       text-align: center;
       font-size: 1.4rem;
       background: lighten(#f9f9f9, 100%) url(../../images/search.svg) no-repeat
         scroll 1px 1px;
       background-size: 6%;
-      background-position: 71px 8px;
+      background-position: 68px 7px;
     }
 
     .icons {

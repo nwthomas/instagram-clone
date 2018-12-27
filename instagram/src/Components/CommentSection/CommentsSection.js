@@ -1,6 +1,7 @@
 import React from "react";
 import commentIcon from "../../images/comment-icon.png";
 import Comment from "./Comment";
+import ellipses from "../../images/ellipses.svg";
 import PropTypes from "prop-types";
 import "./_CommentsSection.scss";
 
@@ -16,8 +17,8 @@ const CommentsSection = props => {
                 id={props.isClicked === true ? "svg_3" : null}
                 onClick={props.heartClick}
                 d="m100,91.5c0,1 -39,60 -39,59.5c0,0.5 27,115.5 27,115c0,0.5 101,123.5 101,123c0,0.5 68,51.5 68,51c0,0.5 162,-154.5 162,-155c0,0.5 31,-119.5 31,-120c0,0.5 -25,-67.5 -25,-68c0,0.5 -74,-28.5 -74,-29c0,0.5 -63,19.5 -63,19c0,0.5 -28,34.5 -28,34c0,0.5 -40,-31.5 -40,-32c0,0.5 -61,-21.5 -61,-22c0,0.5 -59,23.5 -59,24.5z"
-                stroke-opacity="null"
-                stroke-width="null"
+                strokeOpacity="null"
+                strokeWidth="null"
                 stroke="null"
                 fill="#ffffff"
               />
@@ -43,12 +44,19 @@ const CommentsSection = props => {
         ))}
       </div>
       <p className="post__timestamp">{props.timestamp}</p>
-      <input
-        type="text"
-        className="comment__input"
-        name="inputText"
-        placeholder="Add a comment..."
-      />
+      <div className="comment__box">
+        <form onSubmit={props.addNewComment}>
+          <input
+            onChange={props.postComment}
+            value={props.inputText}
+            type="text"
+            className="comment__input"
+            name="inputText"
+            placeholder="Add a comment..."
+          />
+        </form>
+        <img src={ellipses} alt="Ellipses" />
+      </div>
     </div>
   );
 };
