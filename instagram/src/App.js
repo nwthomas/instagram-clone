@@ -21,7 +21,7 @@ export default class App extends Component {
     const arr = dummyData.map(post => post.comments);
     setTimeout(() => {
       this.setState({ dummyData: dummyData, comments: arr });
-    }, 100);
+    }, 4000);
   }
 
   heartClick = () => {
@@ -49,6 +49,15 @@ export default class App extends Component {
     });
   };
 
+  selectCommentInput = event => {
+    const commentInputArr = document.querySelectorAll(".comment__input");
+    commentInputArr.forEach((comment, index) => {
+      if (comment.id === event.target.name) {
+        return commentInputArr[index].focus();
+      }
+    });
+  };
+
   render() {
     return (
       <div className="App">
@@ -69,6 +78,7 @@ export default class App extends Component {
             <PostContainer
               addNewComment={this.addNewComment}
               dummyDataOnProps={this.state.dummyData}
+              selectCommentInput={this.selectCommentInput}
               comments={this.state.comments}
               isClicked={this.state.isClicked}
               heartClick={this.heartClick}
