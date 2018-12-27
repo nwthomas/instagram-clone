@@ -7,9 +7,11 @@ import "./_SearchBar.scss";
 const SearchBarContainer = props => {
   return (
     <div className="search-bar__container">
-      <LogoLink />
-      <SearchField />
-      <Icons />
+      <div className="search-bar__main">
+        <LogoLink />
+        <SearchField />
+        <Icons />
+      </div>
     </div>
   );
 };

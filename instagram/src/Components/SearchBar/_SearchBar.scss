@@ -1,59 +1,70 @@
 .search-bar__container {
-  height: 152px;
+  height: 76px;
   width: 100%;
   border-bottom: 2px solid #e2e2e2;
-  display: flex;
-  position: relative;
-  background: white;
+  position: fixed;
+  top: 0;
   z-index: 100;
-}
+  background: white;
 
-.logo__links {
-  display: flex;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 400px;
-}
+  .search-bar__main {
+    height: 76px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-bottom: 2px solid #e2e2e2;
+    display: flex;
+    position: relative;
 
-.instagram-icon-logo {
-  margin: 38px 0 0 5%;
-  width: 80px;
-  cursor: pointer;
-}
+    .logo__links {
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 400px;
+    }
 
-.divider-line {
-  width: 8%;
-  height: 65px;
-  border-right: 1px solid black;
-  margin-top: 45px;
-}
+    .instagram-icon-logo {
+      margin: 24px 0 0 2.8%;
+      width: 30px;
+      cursor: pointer;
+    }
 
-.instagram-name-logo {
-  margin: 35px 0 0 6.5%;
-  width: 240px;
-  color: black;
-  cursor: pointer;
-}
+    .divider-line {
+      width: 3.1%;
+      height: 27px;
+      border-right: 1px solid black;
+      margin-top: 26px;
+    }
 
-.search-field {
-  margin: 52px auto 0;
-  width: 430px;
-  height: 50px;
-  border: 2px solid #e2e2e2;
-  border-radius: 6px;
-  text-align: center;
-  font-size: 3rem;
-  background: lighten(#f9f9f9, 100%) url(../../images/search.svg) no-repeat
-    scroll 1px 1px;
-  background-size: 6%;
-  background-position: 135px 15px;
-}
+    .instagram-name-logo {
+      margin: 18px 0 0 2.8%;
+      width: 120px;
+      color: black;
+      cursor: pointer;
+    }
 
-.icons {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 60px 2% 0 0;
-  cursor: pointer;
+    .search-field {
+      margin: 25px auto 0;
+      width: 215px;
+      height: 25px;
+      border: 2px solid #e2e2e2;
+      border-radius: 6px;
+      text-align: center;
+      font-size: 1.4rem;
+      background: lighten(#f9f9f9, 100%) url(../../images/search.svg) no-repeat
+        scroll 1px 1px;
+      background-size: 6%;
+      background-position: 71px 8px;
+    }
+
+    .icons {
+      position: absolute;
+      width: 135px;
+      top: 0;
+      right: 0;
+      margin: 28px 1.5% 0 0;
+      cursor: pointer;
+    }
+  }
 }
