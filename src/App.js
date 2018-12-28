@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { SearchBarContainer } from "./Components/SearchBar";
 import { PostContainer } from "./Components/PostContainer";
 import { AsideSectionContainer } from "./Components/AsideSection";
@@ -111,24 +111,26 @@ export default class App extends Component {
               </svg>
             </div>
           ) : (
-            <PostContainer
-              addNewComment={this.addNewComment}
-              dummyDataOnProps={this.state.dummyData}
-              selectCommentInput={this.selectCommentInput}
-              likes={this.state.likes}
-              comments={this.state.comments}
-              userLiked={this.state.userLiked}
-              heartClick={this.heartClick}
-              postComment={this.onChange}
-              inputText={this.state.inputText}
-            />
+            <Fragment>
+              <PostContainer
+                addNewComment={this.addNewComment}
+                dummyDataOnProps={this.state.dummyData}
+                selectCommentInput={this.selectCommentInput}
+                likes={this.state.likes}
+                comments={this.state.comments}
+                userLiked={this.state.userLiked}
+                heartClick={this.heartClick}
+                postComment={this.onChange}
+                inputText={this.state.inputText}
+              />
+              <AsideSectionContainer
+                username={this.state.username}
+                userPhoto={this.state.userPhoto}
+                userFirstName={this.state.userFirstName}
+                userLastName={this.state.userLastName}
+              />
+            </Fragment>
           )}
-          <AsideSectionContainer
-            username={this.state.username}
-            userPhoto={this.state.userPhoto}
-            userFirstName={this.state.userFirstName}
-            userLastName={this.state.userLastName}
-          />
         </div>
       </div>
     );

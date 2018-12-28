@@ -40,12 +40,6 @@ PostContainer.propTypes = {
   thumbnailUrl: PropTypes.string,
   imageUrl: PropTypes.string,
   timestamp: PropTypes.string,
-  comments: PropTypes.arrayOf(
-    PropTypes.shape({
-      username: PropTypes.string,
-      text: PropTypes.string
-    })
-  ),
   likes: PropTypes.array
 };
 
