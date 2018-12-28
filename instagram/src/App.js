@@ -11,23 +11,37 @@ export default class App extends Component {
     this.state = {
       dummyData: [],
       comments: [],
+      likes: [],
+      userLiked: [],
       username: "nwthomas",
-      inputText: "",
-      isClicked: false
+      inputText: ""
     };
   }
 
   componentDidMount() {
     const arr = dummyData.map(post => post.comments);
+    const likes = dummyData.map(post => post.likes);
+    const userLiked = likes.map(like => false);
     setTimeout(() => {
-      this.setState({ dummyData: dummyData, comments: arr });
-    }, 4000);
+      this.setState({
+        dummyData: dummyData,
+        comments: arr,
+        likes: likes,
+        userLiked: userLiked
+      });
+    }, 400);
   }
 
-  heartClick = () => {
-    this.setState(prevState => ({
-      isClicked: !prevState.isClicked
-    }));
+  heartClick = event => {
+    const indexClicked = parseInt(event.target.name);
+    const userLiked = this.state.userLiked;
+    let newLikedArr = [];
+    for (let i = 0; i < userLiked.length; i++) {
+      newLikedArr.push(indexClicked === i ? true : false);
+    }
+    this.setState({
+      userLiked: newLikedArr
+    });
   };
 
   onChange = event => {
@@ -79,8 +93,9 @@ export default class App extends Component {
               addNewComment={this.addNewComment}
               dummyDataOnProps={this.state.dummyData}
               selectCommentInput={this.selectCommentInput}
+              likes={this.state.likes}
               comments={this.state.comments}
-              isClicked={this.state.isClicked}
+              userLiked={this.state.userLiked}
               heartClick={this.heartClick}
               postComment={this.onChange}
               inputText={this.state.inputText}

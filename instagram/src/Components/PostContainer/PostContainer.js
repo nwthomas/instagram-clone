@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Post from "./Post";
 import CommentsSection from "../CommentSection/CommentsSection";
 import PropTypes from "prop-types";
@@ -8,8 +8,9 @@ const PostContainer = props => {
   return (
     <div className="post__container">
       {props.dummyDataOnProps.map((post, index) => (
-        <Fragment key={"fragment" + index}>
+        <div className="post" name={index} key={"fragment" + index}>
           <Post
+            index={index}
             username={post.username}
             thumbnailUrl={post.thumbnailUrl}
             imageUrl={post.imageUrl}
@@ -19,16 +20,16 @@ const PostContainer = props => {
             index={index}
             selectCommentInput={props.selectCommentInput}
             addNewComment={event => props.addNewComment(event, index)}
-            isClicked={props.isClicked}
+            userLiked={props.userLiked}
             heartClick={props.heartClick}
-            likes={post.likes}
+            likes={props.likes[index]}
             comments={props.comments[index]}
             timestamp={post.timestamp}
             key={"comments" + index}
             postComment={props.postComment}
             inputText={props.inputText}
           />
-        </Fragment>
+        </div>
       ))}
     </div>
   );
@@ -45,7 +46,7 @@ PostContainer.propTypes = {
       text: PropTypes.string
     })
   ),
-  likes: PropTypes.number
+  likes: PropTypes.array
 };
 
 export default PostContainer;
