@@ -29,19 +29,37 @@ export default class App extends Component {
         likes: likes,
         userLiked: userLiked
       });
-    }, 400);
+    }, 4000);
   }
+
+  likePhoto = heartIndex => {
+    const newLikesNumArr = this.state.likes.map((likeNums, numIndex) => {
+      if (numIndex === heartIndex) {
+        return !this.state.userLiked[numIndex]
+          ? (likeNums += 1)
+          : (likeNums -= 1);
+      } else {
+        return likeNums;
+      }
+    });
+    this.setState({
+      likes: newLikesNumArr
+    });
+  };
 
   heartClick = event => {
     const indexClicked = parseInt(event.target.name);
-    const userLiked = this.state.userLiked;
-    let newLikedArr = [];
-    for (let i = 0; i < userLiked.length; i++) {
-      newLikedArr.push(indexClicked === i ? true : false);
-    }
+    const newLikedArr = this.state.userLiked.map((like, index) => {
+      if (index === indexClicked) {
+        return like ? false : true;
+      } else {
+        return like;
+      }
+    });
     this.setState({
       userLiked: newLikedArr
     });
+    this.likePhoto(indexClicked);
   };
 
   onChange = event => {

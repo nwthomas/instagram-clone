@@ -15,7 +15,7 @@ const CommentsSection = props => {
           <img
             name={props.index}
             onClick={props.heartClick}
-            src={props.userLiked[props.index] === true ? heartRed : heartWhite}
+            src={props.userLiked[props.index] ? heartRed : heartWhite}
             alt="Heart icon"
           />
         </div>
