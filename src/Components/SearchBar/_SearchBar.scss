@@ -21,26 +21,30 @@
       top: 0;
       left: 0;
       width: 400px;
-    }
 
-    .instagram-icon-logo {
-      margin: 24px 0 0 2.8%;
-      width: 30px;
-      cursor: pointer;
-    }
+      &:active {
+        opacity: 0.6;
+      }
 
-    .divider-line {
-      width: 3.1%;
-      height: 27px;
-      border-right: 1px solid black;
-      margin-top: 26px;
-    }
+      .instagram-icon-logo {
+        margin: 24px 0 0 2.8%;
+        width: 30px;
+        cursor: pointer;
+      }
 
-    .instagram-name-logo {
-      margin: 18px 0 0 2.8%;
-      width: 120px;
-      color: black;
-      cursor: pointer;
+      .divider-line {
+        width: 3.1%;
+        height: 27px;
+        border-right: 1px solid black;
+        margin-top: 26px;
+      }
+
+      .instagram-name-logo {
+        margin: 18px 0 0 2.8%;
+        width: 120px;
+        color: black;
+        cursor: pointer;
+      }
     }
 
     .search-field {
