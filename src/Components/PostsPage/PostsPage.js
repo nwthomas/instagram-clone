@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import { SearchBarContainer } from "../SearchBar";
 import { PostContainer } from "../PostContainer";
 import { AsideSectionContainer } from "../AsideSection";
 import "../style/App.scss";
@@ -7,7 +6,6 @@ import "../style/App.scss";
 const PostsPage = props => {
   return (
     <Fragment>
-      <SearchBarContainer />
       <div className="body__content">
         <PostContainer
           addNewComment={props.addNewComment}
@@ -17,7 +15,7 @@ const PostsPage = props => {
           comments={props.comments}
           userLiked={props.userLiked}
           heartClick={props.heartClick}
-          postComment={props.onChange}
+          postComment={props.postComment}
           inputText={props.inputText}
         />
         <AsideSectionContainer
