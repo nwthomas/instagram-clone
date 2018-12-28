@@ -1,9 +1,28 @@
 import React, { Component } from "react";
+import { Login } from "../LoginPage";
 
 const Authenticate = App => {
   return class extends Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        loggedIn: false
+      };
+    }
+
+    componentDidMount() {
+      const userExists = localStorage.getItem("username");
+      if (userExists) {
+        this.setState({
+          loggedIn: true
+        });
+      } else {
+        return null;
+      }
+    }
+
     render() {
-      return <App />;
+      return this.state.loggedIn === true ? <App /> : <Login />;
     }
   };
 };

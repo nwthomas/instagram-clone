@@ -14,6 +14,7 @@ class App extends Component {
       likes: [],
       userLiked: [],
       username: "nwthomas",
+      password: "asdfasdfasdf",
       userFirstName: "Nathan",
       userLastName: "Thomas",
       userPhoto:
@@ -92,6 +93,11 @@ class App extends Component {
         return commentInputArr[index].focus();
       }
     });
+  };
+
+  appLogin = () => {
+    localStorage.setItem("username", this.state.username);
+    localStorage.setItem("password", this.state.password);
   };
 
   render() {
