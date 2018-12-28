@@ -14,6 +14,10 @@ export default class App extends Component {
       likes: [],
       userLiked: [],
       username: "nwthomas",
+      userFirstName: "Nathan",
+      userLastName: "Thomas",
+      userPhoto:
+        "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/11659498_10153423490654287_176743738536057608_n.jpg?_nc_cat=104&_nc_ht=scontent-sjc3-1.xx&oh=39dba61f5e679aab194f95382afe299c&oe=5CD1D92D",
       inputText: ""
     };
   }
@@ -119,8 +123,13 @@ export default class App extends Component {
               inputText={this.state.inputText}
             />
           )}
+          <AsideSectionContainer
+            username={this.state.username}
+            userPhoto={this.state.userPhoto}
+            userFirstName={this.state.userFirstName}
+            userLastName={this.state.userLastName}
+          />
         </div>
-        <AsideSectionContainer />
       </div>
     );
   }

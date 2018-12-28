@@ -1,0 +1,43 @@
+.aside {
+  margin: 137px 3.2% 0 0;
+  height: 600px;
+  width: 100%;
+  max-width: 295px;
+
+  .photo__username {
+    display: flex;
+    margin-left: 2.5%;
+    width: 100%;
+
+    .user__photo {
+      width: 17%;
+      cursor: pointer;
+
+      img {
+        border-radius: 50%;
+      }
+    }
+
+    .username__fullname {
+      padding: 9px 5%;
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+
+      .aside__username {
+        text-decoration: none;
+        color: black;
+        font-size: 1.45rem;
+        font-weight: 500;
+      }
+
+      .user__full-name {
+        display: inline-block;
+        margin-top: 5px;
+        font-size: 1.2rem;
+        color: #979797;
+        font-weight: 500;
+      }
+    }
+  }
+}
