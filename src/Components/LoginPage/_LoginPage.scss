@@ -5,12 +5,26 @@
   width: 100%;
   margin: 22.8vh auto 0;
 
+  @media (max-width: 800px) {
+    justify-content: center;
+  }
+
   .phones__img {
     width: 51%;
+
+    @media (max-width: 800px) {
+      display: none;
+      width: 100%;
+    }
   }
 
   .form__container {
     width: 46.5%;
+
+    @media (max-width: 800px) {
+      max-width: 349px;
+      width: 100%;
+    }
 
     .form__top {
       margin-top: 30px;

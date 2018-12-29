@@ -16,6 +16,9 @@ const AsideSectionContainer = props => {
           </p>
         </div>
       </div>
+      <div className="stories" />
+      <div className="suggestions" />
+      <div className="links__copyright" />
     </div>
   );
 };
