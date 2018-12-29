@@ -44,7 +44,7 @@ const CommentsSection = props => {
           <input
             onChange={props.postComment}
             id={props.index}
-            value={props.inputText}
+            value={props.inputText[props.index]}
             type="text"
             className="comment__input"
             name="inputText"

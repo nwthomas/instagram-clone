@@ -19,7 +19,8 @@ class App extends Component {
       userLastName: "Thomas",
       userPhoto:
         "http://fangmarks.com/wp-content/uploads/2013/05/instagram-fangmarks-may-10.jpg",
-      inputText: ""
+      inputText: [],
+      searchText: ""
     };
   }
 
@@ -27,6 +28,7 @@ class App extends Component {
     const arr = dummyData.map(post => post.comments);
     const likes = dummyData.map(post => post.likes);
     const userLiked = likes.map(like => false);
+    const commentArr = likes.map(like => "");
     const username = localStorage.getItem("username");
     const password = localStorage.getItem("password");
     setTimeout(() => {
@@ -36,9 +38,10 @@ class App extends Component {
         likes: likes,
         userLiked: userLiked,
         username: username,
-        password: password
+        password: password,
+        inputText: commentArr
       });
-    }, 4000);
+    }, 100);
   }
 
   likePhoto = indexClicked => {
@@ -71,22 +74,43 @@ class App extends Component {
     this.likePhoto(indexClicked);
   };
 
-  onChange = event => {
+  commentOnChange = event => {
+    const updatedCommentText = event.target.value;
+    const index = parseInt(event.target.id);
+    const newInputTextArr = this.state.inputText.map(
+      (commentBox, commentIndex) => {
+        if (index === commentIndex) {
+          return (commentBox = updatedCommentText);
+        } else {
+          return commentBox;
+        }
+      }
+    );
     this.setState({
-      inputText: event.target.value
+      inputText: newInputTextArr
     });
   };
 
   addNewComment = (event, index) => {
     event.preventDefault();
     const newArr = this.state.comments;
+
     newArr[index].push({
       username: this.state.username,
-      text: this.state.inputText
+      text: this.state.inputText[index]
     });
+    const newInputTextArr = this.state.inputText.map(
+      (commentBox, commentIndex) => {
+        if (index === commentIndex) {
+          return (commentBox = "");
+        } else {
+          return commentBox;
+        }
+      }
+    );
     this.setState({
       comments: newArr,
-      inputText: ""
+      inputText: newInputTextArr
     });
   };
 
@@ -125,7 +149,7 @@ class App extends Component {
                 comments={this.state.comments}
                 userLiked={this.state.userLiked}
                 heartClick={this.heartClick}
-                postComment={this.onChange}
+                postComment={this.commentOnChange}
                 inputText={this.state.inputText}
                 username={this.state.username}
                 userPhoto={this.state.userPhoto}
