@@ -4,6 +4,8 @@ import "../style/App.scss";
 import "./_LoginPage.scss";
 import loginPhones from "../../images/login-screen-phones.png";
 import instagramNameLogo from "../../images/instagram-name-logo.jpg";
+import storeIcons from "../../images/ios-google-store-icons.png";
+import fbLogo from "../../images/fb-logo.png";
 
 const Login = props => {
   return (
@@ -13,33 +15,57 @@ const Login = props => {
           <img src={loginPhones} alt="Phones running Instagram" />
         </div>
         <div className="form__container">
-          <div className="login__logo">
-            <img src={instagramNameLogo} alt="Instagram name logo" />
+          <div className="form__top">
+            <div className="login__logo">
+              <img src={instagramNameLogo} alt="Instagram name logo" />
+            </div>
+            <form className="login__form" onSubmit={props.appLogin}>
+              <input
+                onChange={props.updateLoginForm}
+                value={props.username}
+                className="login__username"
+                type="text"
+                name="login-username"
+                placeholder="Phone number, username, or email"
+              />
+              <input
+                onChange={props.updateLoginForm}
+                value={props.password}
+                className="login__password"
+                type="text"
+                name="login-password"
+                placeholder="Password"
+              />
+              <input
+                className="login__button"
+                type="button"
+                name="login-submit"
+                value="Log In"
+              />
+            </form>
+            <div className="or__block">
+              <p>OR</p>
+            </div>
+            <div className="fb__login">
+              <div className="fb__logo">
+                <img src={fbLogo} alt="Facebook logo" />
+              </div>
+              <p>Log in with Facebook</p>
+            </div>
+            <a className="password__reset" href="index.html">
+              Forgot password?
+            </a>
           </div>
-          <form className="login__form" onSubmit={props.appLogin}>
-            <input
-              onChange={props.updateLoginForm}
-              value={props.username}
-              className="login__username"
-              type="text"
-              name="login-username"
-              placeholder="Phone number, username, or email"
-            />
-            <input
-              onChange={props.updateLoginForm}
-              value={props.password}
-              className="login__password"
-              type="text"
-              name="login-password"
-              placeholder="Password"
-            />
-            <input
-              className="login__button"
-              type="button"
-              name="login-submit"
-              value="Log In"
-            />
-          </form>
+          <div className="form__middle">
+            <p>Don't have an account?</p>
+            <a href="index.html">Sign up</a>
+          </div>
+          <div className="form__bottom">
+            <p>Get the app.</p>
+            <div className="store__icons">
+              <img src={storeIcons} alt="iOS and GooglePlay store links" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
