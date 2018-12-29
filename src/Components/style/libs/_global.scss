@@ -67,7 +67,7 @@ code {
   margin: 30vh auto 0;
   animation-name: spin;
   animation-duration: 3s;
-  animation-iteration-count: 5;
+  animation-iteration-count: infinite;
 
   .loading-img {
     fill: #e2e2e2;

@@ -9,7 +9,10 @@ const SearchBarContainer = props => {
     <div className="search-bar__container">
       <div className="search-bar__main">
         <LogoLink />
-        <SearchField />
+        <SearchField
+          searchText={props.searchText}
+          searchOnChange={props.searchOnChange}
+        />
         <Icons />
       </div>
     </div>

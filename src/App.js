@@ -10,6 +10,7 @@ class App extends Component {
     super(props);
     this.state = {
       dummyData: [],
+      shownDummyData: [],
       comments: [],
       likes: [],
       userLiked: [],
@@ -34,6 +35,7 @@ class App extends Component {
     setTimeout(() => {
       this.setState({
         dummyData: dummyData,
+        shownDummyData: dummyData,
         comments: arr,
         likes: likes,
         userLiked: userLiked,
@@ -41,27 +43,44 @@ class App extends Component {
         password: password,
         inputText: commentArr
       });
-    }, 4000);
+    }, 3000);
   }
 
-  searchPosts = () => {
-    (function binarySearch(array, item) {
-      let low = 0;
-      let high = array.length - 1;
+  searchPosts = arr => {
+    const searchItem = this.state.searchText;
+    let shownPosts;
 
-      while (low <= high) {
-        let mid = low + high;
-        let guess = array[mid];
-        if (guess === item) {
-          return item;
-        } else if (guess > mid) {
-          high = mid - 1;
-        } else {
-          low = mid + 1;
-        }
-      }
-      return "None";
-    })();
+    // if (searchItem.length === 0) {
+    //   shownPosts = this.state.dummyData;
+    // } else {
+    //   const shownArr = dummyData.filter(post => {
+    //     console.log(post);
+    //     return post.username.include(shownPosts);
+    //   });
+    //   shownPosts = shownArr;
+    // }
+
+    // this.setState({
+    //   shownDummyData: shownPosts
+    // });
+
+    console.log(shownPosts);
+    console.log(searchItem);
+  };
+
+  searchOnChange = event => {
+    const searchField = document.querySelector(".search-field");
+    const usernameArr = dummyData.map(post => post.username);
+    const searchText = event.target.value;
+    this.setState({
+      searchText: searchText
+    });
+    if (event.target.value.length > 0) {
+      searchField.classList.add("search-field--active");
+    } else {
+      searchField.classList.remove("search-field--active");
+    }
+    this.searchPosts(usernameArr);
   };
 
   likePhoto = indexClicked => {
@@ -147,8 +166,11 @@ class App extends Component {
     return (
       <div className="App">
         <Fragment>
-          <SearchBarContainer />
-          {this.state.dummyData.length === 0 ? (
+          <SearchBarContainer
+            searchOnChange={this.searchOnChange}
+            searchText={this.state.searchText}
+          />
+          {this.state.shownDummyData.length === 0 ? (
             <div className="loading-img__container">
               <svg
                 className="loading-img"
