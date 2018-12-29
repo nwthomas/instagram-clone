@@ -21,24 +21,27 @@ const Login = props => {
             </div>
             <form className="login__form" onSubmit={props.appLogin}>
               <input
-                onChange={props.updateLoginForm}
+                onChange={props.onChange}
                 value={props.username}
+                maxLength="30"
                 className="login__username"
                 type="text"
                 name="login-username"
                 placeholder="Phone number, username, or email"
               />
               <input
-                onChange={props.updateLoginForm}
+                onChange={props.onChange}
                 value={props.password}
+                maxLength="30"
                 className="login__password"
                 type="text"
                 name="login-password"
                 placeholder="Password"
               />
               <input
+                onClick={props.appLogin}
                 className="login__button"
-                type="button"
+                type="submit"
                 name="login-submit"
                 value="Log In"
               />
@@ -73,6 +76,9 @@ const Login = props => {
 };
 
 Login.propTypes = {
+  loginPhones: PropTypes.string,
+  instagramNameLogo: PropTypes.string,
+  fbLogo: PropTypes.string,
   appLogin: PropTypes.func,
   updateLoginForm: PropTypes.func,
   password: PropTypes.string,
