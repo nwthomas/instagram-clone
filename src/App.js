@@ -18,7 +18,7 @@ class App extends Component {
       userFirstName: "Nathan",
       userLastName: "Thomas",
       userPhoto:
-        "http://resourcemagonline.com/wp-content/uploads/2015/06/Nicanor-Garc%C3%ADa.jpg",
+        "http://fangmarks.com/wp-content/uploads/2013/05/instagram-fangmarks-may-10.jpg",
       inputText: ""
     };
   }
