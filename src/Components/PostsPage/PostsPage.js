@@ -4,6 +4,7 @@ import { AsideSectionContainer } from "../AsideSection";
 import "../style/App.scss";
 
 const PostsPage = props => {
+  console.log(props.state);
   return (
     <Fragment>
       <div className="body__content">

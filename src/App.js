@@ -117,7 +117,7 @@ class App extends Component {
   };
 
   heartClick = event => {
-    const indexClicked = parseInt(event.target.name);
+    const indexClicked = parseInt(event.target.name); // Used parseInt to convert from string
     const newLikedArr = this.state.userLiked.map((like, index) => {
       if (index === indexClicked) {
         return like ? false : true;
@@ -202,6 +202,7 @@ class App extends Component {
           ) : (
             <div className="body__content">
               <PostsPage
+                state={this.state}
                 addNewComment={this.addNewComment}
                 dummyDataOnProps={this.state.dummyData}
                 selectCommentInput={this.selectCommentInput}
