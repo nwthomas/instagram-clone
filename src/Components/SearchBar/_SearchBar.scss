@@ -66,7 +66,12 @@
       background: #f9f9f9 url(../../images/search.svg) no-repeat scroll 1px 1px;
       background-size: 6%;
       background-position: 68px 7px;
+
+      @media (max-width: 500px) {
+        display: none;
+      }
     }
+
     .search-field--active {
       background: #f9f9f9;
     }
