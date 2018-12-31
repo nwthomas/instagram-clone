@@ -6,14 +6,23 @@ import "./_SearchBar.scss";
 
 const SearchBarContainer = props => {
   return (
-    <div className="search-bar__container">
-      <div className="search-bar__main">
-        <LogoLink />
+    <div
+      className={
+        props.isTop
+          ? "search-bar__container"
+          : "search-bar__container--scroll search-bar__container"
+      }
+    >
+      <div
+        className={props.isTop ? "search-bar__main" : "search-bar__main scroll"}
+      >
+        <LogoLink isTop={props.isTop} />
         <SearchField
+          isTop={props.isTop}
           searchText={props.searchText}
           searchOnChange={props.searchOnChange}
         />
-        <Icons />
+        <Icons isTop={props.isTop} />
       </div>
     </div>
   );

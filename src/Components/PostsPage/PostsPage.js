@@ -4,7 +4,6 @@ import { AsideSectionContainer } from "../AsideSection";
 import "../style/App.scss";
 
 const PostsPage = props => {
-  console.log(props.state);
   return (
     <Fragment>
       <div className="body__content">
@@ -20,6 +19,7 @@ const PostsPage = props => {
           inputText={props.inputText}
         />
         <AsideSectionContainer
+          isTop={props.isTop}
           username={props.username}
           userPhoto={props.userPhoto}
           userFirstName={props.userFirstName}

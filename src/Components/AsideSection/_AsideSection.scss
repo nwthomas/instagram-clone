@@ -1,8 +1,19 @@
-.aside {
+.aside__container {
   margin: 137px 3.2% 0 0;
-  height: 600px;
   width: 100%;
   max-width: 295px;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
+
+  .aside {
+    max-width: 295px;
+    width: 100%;
+    border: 1px solid red;
+    height: 600px;
+    margin-right: 3%;
+  }
 
   .photo__username {
     display: flex;
@@ -39,5 +50,17 @@
         font-weight: 500;
       }
     }
+  }
+}
+
+.aside__container--fixed {
+  position: fixed;
+  max-width: 1000px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 77px 0;
+
+  @media (max-width: 1000px) {
+    display: none;
   }
 }

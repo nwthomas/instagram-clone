@@ -9,23 +9,25 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      dummyData: [],
-      shownDummyData: [],
       comments: [],
+      dummyData: [],
+      inputText: [],
+      isTop: true,
       likes: [],
+      password: "",
+      searchText: "",
+      shownDummyData: [],
       userLiked: [],
       username: "",
-      password: "",
       userFirstName: "Nathan",
       userLastName: "Thomas",
       userPhoto:
-        "http://fangmarks.com/wp-content/uploads/2013/05/instagram-fangmarks-may-10.jpg",
-      inputText: [],
-      searchText: ""
+        "http://fangmarks.com/wp-content/uploads/2013/05/instagram-fangmarks-may-10.jpg"
     };
   }
 
   componentDidMount() {
+    document.addEventListener("scroll", this.scrollChange);
     const arr = dummyData.map(post => post.comments);
     const likes = dummyData.map(post => post.likes);
     const userLiked = likes.map(like => false);
@@ -43,8 +45,18 @@ class App extends Component {
         password: password,
         inputText: commentArr
       });
-    }, 3000);
+    }, 100);
   }
+
+  scrollChange = () => {
+    const isTop = window.scrollY < 55;
+
+    if (isTop !== this.isTop) {
+      this.setState({
+        isTop
+      });
+    }
+  };
 
   searchPosts = arr => {
     const searchItem = this.state.searchText;
@@ -185,6 +197,7 @@ class App extends Component {
       <div className="App">
         <Fragment>
           <SearchBarContainer
+            isTop={this.state.isTop}
             searchOnChange={this.searchOnChange}
             searchText={this.state.searchText}
           />
@@ -202,6 +215,7 @@ class App extends Component {
           ) : (
             <div className="body__content">
               <PostsPage
+                isTop={this.state.isTop}
                 state={this.state}
                 addNewComment={this.addNewComment}
                 dummyDataOnProps={this.state.dummyData}
