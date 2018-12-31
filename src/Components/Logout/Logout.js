@@ -10,6 +10,7 @@ const Logout = props => {
           : "logout__cover  logout__cover--hidden"
       }
     >
+      <p>Logout?</p>
       <form onSubmit={props.logoutModal} className="logout__container">
         <input
           type="submit"
