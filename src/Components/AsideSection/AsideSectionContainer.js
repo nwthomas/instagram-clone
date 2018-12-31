@@ -35,16 +35,26 @@ const AsideSectionContainer = props => {
         </div>
         <div className="links__copyright">
           <div className="links">
-            <a href="index.html">About Us</a>
+            <a href="index.html">About Us </a>
+            <span>•</span>
             <a href="index.html">Support</a>
+            <span>•</span>
             <a href="index.html">Press</a>
+            <span>•</span>
             <a href="index.html">API</a>
+            <span>•</span>
             <a href="index.html">Jobs</a>
+            <span>•</span>
             <a href="index.html">Privacy</a>
+            <span>•</span>
             <a href="index.html">Terms</a>
+            <span>•</span>
             <a href="index.html">Directory</a>
+            <span>•</span>
             <a href="index.html">Profiles</a>
+            <span>•</span>
             <a href="index.html">Hashtags</a>
+            <span>•</span>
             <a href="index.html">Language</a>
           </div>
           <p>© 2018 Nathan Thomas</p>
