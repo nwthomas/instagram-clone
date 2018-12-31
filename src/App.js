@@ -11,6 +11,7 @@ class App extends Component {
     this.state = {
       comments: [],
       dummyData: [],
+      fullName: [],
       inputText: [],
       isTop: true,
       likes: [],
@@ -19,8 +20,6 @@ class App extends Component {
       shownDummyData: [],
       userLiked: [],
       username: "",
-      userFirstName: "Nathan",
-      userLastName: "Thomas",
       userPhoto:
         "http://fangmarks.com/wp-content/uploads/2013/05/instagram-fangmarks-may-10.jpg"
     };
@@ -34,6 +33,7 @@ class App extends Component {
     const commentArr = likes.map(like => "");
     const username = localStorage.getItem("username");
     const password = localStorage.getItem("password");
+    const fullName = localStorage.getItem("fullName");
     setTimeout(() => {
       this.setState({
         dummyData: dummyData,
@@ -43,7 +43,8 @@ class App extends Component {
         userLiked: userLiked,
         username: username,
         password: password,
-        inputText: commentArr
+        inputText: commentArr,
+        fullName
       });
     }, 100);
   }
@@ -228,8 +229,7 @@ class App extends Component {
                 inputText={this.state.inputText}
                 username={this.state.username}
                 userPhoto={this.state.userPhoto}
-                userFirstName={this.state.userFirstName}
-                userLastName={this.state.userLastName}
+                fullName={this.state.fullName}
               />
             </div>
           )}

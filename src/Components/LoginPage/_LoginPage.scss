@@ -3,11 +3,12 @@
   justify-content: space-between;
   max-width: 750px;
   width: 100%;
-  padding: 10vh 0 0;
+  padding: 15vh 0 0;
   margin: 0 auto;
 
   @media (max-width: 800px) {
     justify-content: center;
+    padding-top: 5vh;
   }
 
   .phones__img {
@@ -48,6 +49,19 @@
         margin: 6px 11% 0;
 
         .login__username {
+          height: 33px;
+          margin-bottom: 7px;
+          padding-left: 9px;
+          font-size: 1.2rem;
+          border: 1px solid #edecec;
+          background: #f9f9f9;
+          border-radius: 3px;
+          -webkit-appearance: none;
+          -moz-border-radius: 3px;
+          -webkit-border-radius: 3px;
+        }
+
+        .login__full-name {
           height: 33px;
           margin-bottom: 7px;
           padding-left: 9px;
@@ -117,7 +131,7 @@
 
       .fb__login {
         display: flex;
-        margin: 37px 26% 0;
+        margin: 25px 26% 0;
 
         .fb__logo {
           width: 10%;
@@ -130,20 +144,6 @@
           font-weight: 500;
           color: #31487a;
           cursor: pointer;
-        }
-      }
-
-      .password__reset {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        margin-top: 20px;
-        text-decoration: none;
-        color: #31487a;
-        font-size: 1.2rem;
-
-        &:hover {
-          text-decoration: underline;
         }
       }
     } // Form top

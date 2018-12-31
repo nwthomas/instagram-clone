@@ -8,7 +8,8 @@ const Authenticate = App => {
       this.state = {
         loggedIn: false,
         username: "",
-        password: ""
+        password: "",
+        fullName: ""
       };
     }
 
@@ -26,6 +27,7 @@ const Authenticate = App => {
     appLogin = event => {
       localStorage.setItem("username", this.state.username);
       localStorage.setItem("password", this.state.password);
+      localStorage.setItem("fullName", this.state.fullName);
     };
 
     onChange = event => {
@@ -37,6 +39,10 @@ const Authenticate = App => {
         this.setState({
           password: event.target.value
         });
+      } else if (event.target.name === "login-fullname") {
+        this.setState({
+          fullName: event.target.value
+        });
       }
     };
 
@@ -45,6 +51,7 @@ const Authenticate = App => {
         <App />
       ) : (
         <Login
+          fullName={this.fullName}
           appLogin={this.appLogin}
           username={this.state.username}
           password={this.state.password}

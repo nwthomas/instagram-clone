@@ -18,9 +18,7 @@ const AsideSectionContainer = props => {
             <a className="aside__username" href="index.html">
               {props.username}
             </a>
-            <p className="user__full-name">
-              {props.userFirstName} {props.userLastName}
-            </p>
+            <p className="user__full-name">{props.fullName}</p>
           </div>
         </div>
         <div className="stories">

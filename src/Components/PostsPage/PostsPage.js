@@ -22,8 +22,7 @@ const PostsPage = props => {
           isTop={props.isTop}
           username={props.username}
           userPhoto={props.userPhoto}
-          userFirstName={props.userFirstName}
-          userLastName={props.userLastName}
+          fullName={props.fullName}
         />
       </div>
     </Fragment>

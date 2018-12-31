@@ -27,7 +27,16 @@ const Login = props => {
                 className="login__username"
                 type="text"
                 name="login-username"
-                placeholder="Fake username"
+                placeholder="Username"
+              />
+              <input
+                onChange={props.onChange}
+                value={props.fullName}
+                maxLength="30"
+                className="login__full-name"
+                type="text"
+                name="login-fullname"
+                placeholder="Full name"
               />
               <input
                 onChange={props.onChange}
@@ -55,9 +64,6 @@ const Login = props => {
               </div>
               <p>Log in with Facebook</p>
             </div>
-            <a className="password__reset" href="index.html">
-              Forgot password?
-            </a>
           </div>
           <div className="form__middle">
             <p>Don't have an account?</p>
