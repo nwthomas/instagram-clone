@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { SearchBarContainer } from "./Components/SearchBar";
+import { Logout } from "./Components/Logout";
 import { PostsPage } from "./Components/PostsPage";
 import { Authenticate } from "./Components/Authentication";
 import dummyData from "./dummy-data";
@@ -14,6 +15,7 @@ class App extends Component {
       fullName: [],
       inputText: [],
       isTop: true,
+      isModelTrue: false,
       likes: [],
       password: "",
       searchText: "",
@@ -193,14 +195,37 @@ class App extends Component {
     });
   };
 
+  logout = () => {
+    const modelSetting = this.state.isModelTrue ? false : true;
+    this.setState({
+      isModelTrue: modelSetting
+    });
+  };
+
+  logoutModal = event => {
+    if (this.state.isModelTrue) {
+      console.log("Working!");
+      localStorage.clear();
+    } else {
+      this.setState({
+        isModelTrue: false
+      });
+    }
+  };
+
   render() {
     return (
       <div className="App">
         <Fragment>
           <SearchBarContainer
+            logout={this.logout}
             isTop={this.state.isTop}
             searchOnChange={this.searchOnChange}
             searchText={this.state.searchText}
+          />
+          <Logout
+            isModelTrue={this.state.isModelTrue}
+            logoutModal={this.logoutModal}
           />
           {this.state.shownDummyData.length === 0 ? (
             <div className="loading-img__container">

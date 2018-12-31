@@ -22,7 +22,7 @@ const SearchBarContainer = props => {
           searchText={props.searchText}
           searchOnChange={props.searchOnChange}
         />
-        <Icons isTop={props.isTop} />
+        <Icons logout={props.logout} isTop={props.isTop} />
       </div>
     </div>
   );
