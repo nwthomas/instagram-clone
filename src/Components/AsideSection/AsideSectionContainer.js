@@ -23,9 +23,34 @@ const AsideSectionContainer = props => {
             </p>
           </div>
         </div>
-        <div className="stories" />
-        <div className="suggestions" />
-        <div className="links__copyright" />
+        <div className="stories">
+          <div className="stories__top">
+            <p>Stories</p>
+            <p>Watch All</p>
+          </div>
+        </div>
+        <div className="suggestions">
+          <div className="suggestions__top">
+            <p>Suggestions For You</p>
+            <p>See All</p>
+          </div>
+        </div>
+        <div className="links__copyright">
+          <div className="links">
+            <a href="index.html">About Us</a>
+            <a href="index.html">Support</a>
+            <a href="index.html">Press</a>
+            <a href="index.html">API</a>
+            <a href="index.html">Jobs</a>
+            <a href="index.html">Privacy</a>
+            <a href="index.html">Terms</a>
+            <a href="index.html">Directory</a>
+            <a href="index.html">Profiles</a>
+            <a href="index.html">Hashtags</a>
+            <a href="index.html">Language</a>
+          </div>
+          <p>© 2018 Nathan Thomas</p>
+        </div>
       </div>
     </div>
   );

@@ -3,7 +3,7 @@
   justify-content: space-between;
   max-width: 750px;
   width: 100%;
-  padding: 15vh 0 0;
+  padding: 10vh 0 0;
   margin: 0 auto;
 
   @media (max-width: 800px) {
@@ -55,6 +55,7 @@
           border: 1px solid #edecec;
           background: #f9f9f9;
           border-radius: 3px;
+          -webkit-appearance: none;
           -moz-border-radius: 3px;
           -webkit-border-radius: 3px;
         }
@@ -68,6 +69,7 @@
           border: 1px solid #edecec;
           background: #f9f9f9;
           border-radius: 3px;
+          -webkit-appearance: none;
           -moz-border-radius: 3px;
           -webkit-border-radius: 3px;
         }
@@ -82,6 +84,7 @@
           border-radius: 5px;
           -moz-border-radius: 5px;
           -webkit-border-radius: 5px;
+          -webkit-appearance: none;
           cursor: pointer;
 
           &:hover {

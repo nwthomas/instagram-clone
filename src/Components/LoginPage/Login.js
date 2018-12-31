@@ -27,7 +27,7 @@ const Login = props => {
                 className="login__username"
                 type="text"
                 name="login-username"
-                placeholder="Phone number, username, or email"
+                placeholder="Fake username"
               />
               <input
                 onChange={props.onChange}
@@ -36,7 +36,7 @@ const Login = props => {
                 className="login__password"
                 type="text"
                 name="login-password"
-                placeholder="Password"
+                placeholder="Fake password"
               />
               <input
                 onClick={props.appLogin}
