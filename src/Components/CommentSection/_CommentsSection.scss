@@ -47,7 +47,7 @@
 .post__timestamp {
   display: block;
   padding-bottom: 12px;
-  margin: 0 2.6% 14px;
+  margin: 0 2.6% 10px;
   font-size: 1.1rem;
   color: #8e8e8e;
   border-bottom: 1px solid #e2e2e2;
@@ -73,35 +73,26 @@
 }
 
 .comment__box {
-  display: flex;
-  justify-content: space-between;
-  width: 95.6%;
+  display: inline-block;
+  width: 97%;
   margin: 0 0 16px 2.6%;
 
-  .comment__input {
-    width: 365%;
-    height: 25px;
-    font-size: 1.4rem;
-    border: none;
-    outline: none;
+  form {
+    .comment__input {
+      display: inline-block;
+      width: 95%;
+      height: 25px;
+      font-size: 1.4rem;
+      border: none;
+      outline: none;
+    }
+
+    img {
+      display: inline-block;
+      width: 2.5%;
+      height: auto;
+      margin-top: 13px;
+      cursor: pointer;
+    }
   }
-
-  .comment__input.text:focus:focus {
-    background: white;
-  }
-
-  img {
-    width: 4%;
-    height: 15px;
-    margin-top: 9px;
-    cursor: pointer;
-  }
-}
-
-#svg_3 {
-  fill: red;
-}
-
-#svg_1 {
-  fill: red;
 }

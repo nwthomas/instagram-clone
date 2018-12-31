@@ -50,8 +50,8 @@ const CommentsSection = props => {
             name="inputText"
             placeholder="Add a comment..."
           />
+          <img src={ellipses} alt="Ellipses" />
         </form>
-        <img src={ellipses} alt="Ellipses" />
       </div>
     </div>
   );
