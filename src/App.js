@@ -196,14 +196,14 @@ class App extends Component {
   };
 
   logout = () => {
-    const modelSetting = this.state.isModelTrue ? false : true;
+    const modelSetting = !this.state.isModelTrue ? true : false;
     this.setState({
       isModelTrue: modelSetting
     });
   };
 
   logoutModal = event => {
-    if (this.state.isModelTrue) {
+    if (event.target.name === "yes") {
       console.log("Working!");
       localStorage.clear();
     } else {
