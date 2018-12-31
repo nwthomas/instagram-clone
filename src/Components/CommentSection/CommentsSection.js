@@ -4,6 +4,7 @@ import Comment from "./Comment";
 import heartRed from "../../images/heart-icon--red.svg";
 import heartWhite from "../../images/heart-icon--white.svg";
 import ellipses from "../../images/ellipses.svg";
+import bookmark from "../../images/bookmark.svg";
 import PropTypes from "prop-types";
 import "./_CommentsSection.scss";
 
@@ -11,21 +12,26 @@ const CommentsSection = props => {
   return (
     <div className="comments__section">
       <div className="comments__icons">
-        <div className="comment__icon heart">
-          <img
-            name={props.index}
-            onClick={props.heartClick}
-            src={props.userLiked[props.index] ? heartRed : heartWhite}
-            alt="Heart icon"
-          />
+        <div className="heart__comment">
+          <div className="comment__icon heart">
+            <img
+              name={props.index}
+              onClick={props.heartClick}
+              src={props.userLiked[props.index] ? heartRed : heartWhite}
+              alt="Heart icon"
+            />
+          </div>
+          <div className="comment__icon comment">
+            <img
+              onClick={props.selectCommentInput}
+              name={props.index}
+              src={commentIcon}
+              alt="Comment icon"
+            />
+          </div>
         </div>
-        <div className="comment__icon comment">
-          <img
-            onClick={props.selectCommentInput}
-            name={props.index}
-            src={commentIcon}
-            alt="Comment icon"
-          />
+        <div className="bookmark">
+          <img src={bookmark} alt="Bookmark icon" />
         </div>
       </div>
       <p className="likes">{props.likes} likes</p>
@@ -50,7 +56,9 @@ const CommentsSection = props => {
             name="inputText"
             placeholder="Add a comment..."
           />
-          <img src={ellipses} alt="Ellipses" />
+          <div className="ellipses">
+            <img src={ellipses} alt="Ellipses" />
+          </div>
         </form>
       </div>
     </div>

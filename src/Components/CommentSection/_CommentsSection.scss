@@ -13,8 +13,35 @@
 
 .comments__icons {
   display: flex;
+  justify-content: space-between;
   height: 30px;
   padding: 6px 2.4% 0;
+
+  .heart__comment {
+    display: flex;
+
+    .comment__icon {
+      width: 27px;
+      margin-right: 12px;
+      cursor: pointer;
+
+      svg {
+        padding: 0 15% 0;
+        g {
+          transform: scale(0.05);
+        }
+      }
+    }
+
+    .comment {
+      width: 29px;
+    }
+  }
+
+  .bookmark {
+    width: 18px;
+    margin-top: 2px;
+  }
 }
 
 .comment__icon {
@@ -74,24 +101,24 @@
 
 .comment__box {
   display: inline-block;
-  width: 97%;
-  margin: 0 0 16px 2.6%;
+  width: 96%;
+  margin: 0 0 16px 2.4%;
 
   form {
+    display: flex;
+
     .comment__input {
-      display: inline-block;
-      width: 95%;
+      width: 90%;
       height: 25px;
       font-size: 1.4rem;
       border: none;
       outline: none;
     }
 
-    img {
-      display: inline-block;
+    .ellipses {
       width: 2.5%;
       height: auto;
-      margin-top: 13px;
+      margin: 8px 0 0 5.5%;
       cursor: pointer;
     }
   }
