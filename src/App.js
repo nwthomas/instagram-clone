@@ -48,7 +48,7 @@ class App extends Component {
         inputText: commentArr,
         fullName
       });
-    }, 100);
+    }, 4000);
   }
 
   scrollChange = () => {
