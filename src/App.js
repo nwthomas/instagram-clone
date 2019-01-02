@@ -51,6 +51,10 @@ class App extends Component {
     }, 4000);
   }
 
+  componentWillUnmount() {
+    clearTimeout();
+  }
+
   scrollChange = () => {
     const isTop = window.scrollY < 55;
 
@@ -132,6 +136,7 @@ class App extends Component {
   };
 
   heartClick = event => {
+    console.log(setTimeout);
     const indexClicked = parseInt(event.target.name); // Used parseInt to convert from string
     const newLikedArr = this.state.userLiked.map((like, index) => {
       if (index === indexClicked) {
