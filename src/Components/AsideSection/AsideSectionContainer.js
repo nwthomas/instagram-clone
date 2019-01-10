@@ -57,7 +57,7 @@ const AsideSectionContainer = props => {
             <span>•</span>
             <a href="index.html">Language</a>
           </div>
-          <p>© 2018 Nathan Thomas</p>
+          <p>© 2018 Instagram</p>
         </div>
       </div>
     </div>
