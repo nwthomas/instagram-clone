@@ -65,59 +65,42 @@ class App extends Component {
     }
   };
 
-  searchPosts = arr => {
-    const searchItem = this.state.searchText;
-    let shownPosts;
-
-    // if (searchItem.length === 0) {
-    //   shownPosts = this.state.dummyData;
-    // } else {
-    //   const shownArr = dummyData.filter(post => {
-    //     console.log(post);
-    //     return post.username.include(shownPosts);
-    //   });
-    //   shownPosts = shownArr;
-    // }
-
-    // this.setState({
-    //   shownDummyData: shownPosts
-    // });
-
-    // function binarySearch(array, item) {
-    //   let low = 0;
-    //   let high = array.length - 1;
-
-    //   while (low <= high) {
-    //     let mid = low + high;
-    //     let guess = array[mid];
-    //     if (guess === item) {
-    //       return item;
-    //     } else if (guess > mid) {
-    //       high = mid - 1;
-    //     } else {
-    //       low = mid + 1;
-    //     }
-    //   }
-    //   return "None";
-    // }
-
-    console.log(shownPosts);
-    console.log(searchItem);
+  searchPosts = searchText => {
+    if (searchText.split("").length > 0) {
+      const shownArr = this.state.dummyData.filter(post => {
+        if (
+          JSON.stringify(post)
+            .toLowerCase()
+            .includes(searchText)
+        ) {
+          // Searches entire post for anything similar
+          return true;
+        }
+      });
+      this.setState({
+        shownDummyData: shownArr
+      });
+    } else {
+      this.setState({
+        shownDummyData: this.state.dummyData // Sets shown posts back to original list when search text length returns to zero
+      });
+    }
   };
 
   searchOnChange = event => {
     const searchField = document.querySelector(".search-field");
-    const usernameArr = dummyData.map(post => post.username);
     const searchText = event.target.value;
-    this.setState({
-      searchText: searchText
-    });
+    this.setState(
+      {
+        searchText: searchText
+      },
+      () => this.searchPosts(searchText)
+    );
     if (event.target.value.length > 0) {
       searchField.classList.add("search-field--active");
     } else {
       searchField.classList.remove("search-field--active");
     }
-    this.searchPosts(usernameArr);
   };
 
   likePhoto = indexClicked => {
@@ -249,7 +232,7 @@ class App extends Component {
                 isTop={this.state.isTop}
                 state={this.state}
                 addNewComment={this.addNewComment}
-                dummyDataOnProps={this.state.dummyData}
+                dummyDataOnProps={this.state.shownDummyData}
                 selectCommentInput={this.selectCommentInput}
                 likes={this.state.likes}
                 comments={this.state.comments}
