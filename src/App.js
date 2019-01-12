@@ -71,10 +71,12 @@ class App extends Component {
         if (
           JSON.stringify(post)
             .toLowerCase()
-            .includes(searchText)
+            .includes(searchText.toLowerCase())
         ) {
           // Searches entire post for anything similar
           return true;
+        } else {
+          return false;
         }
       });
       this.setState({
@@ -246,7 +248,6 @@ class App extends Component {
               />
             </div>
           )}
-          ;
         </Fragment>
       </div>
     );
