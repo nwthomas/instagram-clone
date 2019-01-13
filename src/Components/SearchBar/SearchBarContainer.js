@@ -27,5 +27,4 @@ const SearchBarContainer = props => {
     </div>
   );
 };
-
 export default SearchBarContainer;
