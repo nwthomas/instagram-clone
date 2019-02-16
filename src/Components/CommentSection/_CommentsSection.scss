@@ -9,50 +9,50 @@
   -moz-border-bottom-left-radius: 3px;
   -webkit-border-bottom-right-radius: 3px;
   background: white;
-}
 
-.comments__icons {
-  display: flex;
-  justify-content: space-between;
-  height: 30px;
-  padding: 6px 2.4% 0;
-
-  .heart__comment {
+  .comments__icons {
     display: flex;
+    justify-content: space-between;
+    height: 30px;
+    padding: 6px 2.4% 0;
 
-    .comment__icon {
-      width: 27px;
-      margin-right: 12px;
-      cursor: pointer;
+    .heart__comment {
+      display: flex;
 
-      svg {
-        padding: 0 15% 0;
-        g {
-          transform: scale(0.05);
+      .comment__icon {
+        width: 27px;
+        margin-right: 12px;
+        cursor: pointer;
+
+        svg {
+          padding: 0 15% 0;
+          g {
+            transform: scale(0.05);
+          }
         }
+      }
+
+      .comment {
+        width: 29px;
       }
     }
 
-    .comment {
-      width: 29px;
+    .bookmark {
+      width: 18px;
+      margin-top: 2px;
     }
   }
 
-  .bookmark {
-    width: 18px;
-    margin-top: 2px;
-  }
-}
+  .comment__icon {
+    width: 27px;
+    margin-right: 12px;
+    cursor: pointer;
 
-.comment__icon {
-  width: 27px;
-  margin-right: 12px;
-  cursor: pointer;
-
-  svg {
-    padding: 0 15% 0;
-    g {
-      transform: scale(0.05);
+    svg {
+      padding: 0 15% 0;
+      g {
+        transform: scale(0.05);
+      }
     }
   }
 }

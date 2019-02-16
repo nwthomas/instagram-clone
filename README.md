@@ -2,9 +2,9 @@
 
 # Instagram Clone
 
-As both one of the most popular social media sites on the planet as well as a rising star at the moment, Instagram is a unique combination of photo posts, text, and stories.
+As both one of the most popular social media sites on the planet, Instagram has a great cocktail of photo posts, text, and stories that make users want to keep coming back to use it.
 
-Due to this, I built a clone as a way to showcase React and Sassy CSS (SCSS) as well as to build an interesting portfolio piece. Although you are not required to login with a specific username, you will find that the login functionality is otherwise present and fun to use. I hope you enjoy my work!
+Due to this, I thought that this Instagram clone would be a great way to showcase React and Sassy CSS (SCSS) as well as to build an interesting portfolio piece. Although you are not required to login with a specific username, you will find that the login functionality is otherwise present and fun to use. I hope you enjoy my work!
 
 ## Screenshots
 
@@ -35,4 +35,4 @@ Due to this, I built a clone as a way to showcase React and Sassy CSS (SCSS) as 
 
 ## Acknowledgements
 
-- Thanks to [Cecil John Tantay](https://github.com/cjbt) for coding the same clone right alongside me. You helped me stay sane while working on this.
+- Thanks to [Cecil John Tantay](https://github.com/cjbt) for coding the same application right alongside me. You helped me stay sane while working on this project.
