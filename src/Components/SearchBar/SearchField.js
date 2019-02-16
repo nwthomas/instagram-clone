@@ -1,5 +1,6 @@
 import React from "react";
 import "./_SearchBar.scss";
+import PropTypes from "prop-types";
 
 const SearchField = props => {
   return (
@@ -12,6 +13,11 @@ const SearchField = props => {
       value={props.searchText}
     />
   );
+};
+
+SearchField.propTypes = {
+  searchOnChange: PropTypes.func,
+  searchText: PropTypes.string
 };
 
 export default SearchField;

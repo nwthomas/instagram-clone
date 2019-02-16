@@ -1,5 +1,6 @@
 import React from "react";
 import "./_Logout.scss";
+import PropTypes from "prop-types";
 
 const Logout = props => {
   return (
@@ -29,6 +30,11 @@ const Logout = props => {
       </form>
     </div>
   );
+};
+
+Logout.propTypes = {
+  isModalTrue: PropTypes.bool,
+  logoutModal: PropTypes.func
 };
 
 export default Logout;
