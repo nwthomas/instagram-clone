@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
-import "./_Post.scss";
 
 const Post = props => {
   return (

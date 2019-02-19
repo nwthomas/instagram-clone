@@ -1,7 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "../style/App.scss";
-import "./_LoginPage.scss";
 import loginPhones from "../../images/login-screen-phones.png";
 import instagramNameLogo from "../../images/instagram-name-logo.jpg";
 import storeIcons from "../../images/ios-google-store-icons.png";

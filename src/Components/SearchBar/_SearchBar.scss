@@ -1,7 +1,7 @@
 .search-bar__container {
   height: 76px;
   width: 100%;
-  border-bottom: 2px solid #e2e2e2;
+  border-bottom: 2px solid $searchbar-bg;
   position: fixed;
   top: 0;
   z-index: 100;

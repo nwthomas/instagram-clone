@@ -1,5 +1,4 @@
 import React from "react";
-import "./_SearchBar.scss";
 import PropTypes from "prop-types";
 
 const SearchField = props => {

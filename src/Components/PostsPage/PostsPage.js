@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import { PostContainer } from "../PostContainer";
 import { AsideSectionContainer } from "../AsideSection";
-import "../style/App.scss";
 import PropTypes from "prop-types";
 
 const PostsPage = props => {

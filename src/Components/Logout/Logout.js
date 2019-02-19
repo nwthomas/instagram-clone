@@ -1,5 +1,4 @@
 import React from "react";
-import "./_Logout.scss";
 import PropTypes from "prop-types";
 
 const Logout = props => {

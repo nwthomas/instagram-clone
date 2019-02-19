@@ -1,5 +1,4 @@
 import React from "react";
-import "./_SearchBar.scss";
 import instagramIconLogo from "../../images/instagram-icon-logo.svg";
 import instagramNameLogo from "../../images/instagram-name-logo.jpg";
 import PropTypes from "prop-types";

@@ -6,7 +6,6 @@ import heartWhite from "../../images/heart-icon--white.svg";
 import ellipses from "../../images/ellipses.svg";
 import bookmark from "../../images/bookmark.svg";
 import PropTypes from "prop-types";
-import "./_CommentsSection.scss";
 
 const CommentsSection = props => {
   return (

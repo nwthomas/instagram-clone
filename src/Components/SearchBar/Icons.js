@@ -1,6 +1,5 @@
 import React from "react";
 import icons from "../../images/icons.png";
-import "./_SearchBar.scss";
 import PropTypes from "prop-types";
 
 const Icons = props => {

@@ -1,14 +1,14 @@
 // ================= Variables and Mixins
-@import "./libs/variables";
-@import "./libs/mixins";
+@import "./libs/_variables";
+@import "./libs/_mixins";
 
 // ================= General Styles
-@import "./libs/reset";
-@import "./libs/global";
+@import "./libs/_reset";
+@import "./libs/_global";
 
 // ================= Components
-@import "../SearchBar/SearchBar";
-@import "../PostContainer/Post";
-@import "../CommentSection/CommentsSection";
-@import "../AsideSection/AsideSection";
-@import "../LoginPage/LoginPage";
+@import "../SearchBar/_SearchBar";
+@import "../PostContainer/_Post";
+@import "../CommentSection/_CommentsSection";
+@import "../AsideSection/_AsideSection";
+@import "../LoginPage/_LoginPage";

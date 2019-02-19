@@ -2,7 +2,6 @@ import React from "react";
 import LogoLink from "./LogoLink";
 import SearchField from "./SearchField";
 import Icons from "./Icons";
-import "./_SearchBar.scss";
 import PropTypes from "prop-types";
 
 const SearchBarContainer = props => {
