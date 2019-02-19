@@ -32,7 +32,3 @@ Due to this, I thought that this Instagram clone would be a great way to showcas
 ## Author
 
 - [Nathan Thomas](https://github.com/nwthomas)
-
-## Acknowledgements
-
-- Thanks to [Cecil John Tantay](https://github.com/cjbt) for coding the same application right alongside me. You helped me stay sane while working on this project.

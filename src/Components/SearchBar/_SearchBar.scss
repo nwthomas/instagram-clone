@@ -51,7 +51,7 @@
       .display-none {
         animation: "fade-out" 0.15s forwards;
       }
-    }
+    } // Logo Links
 
     .search-field {
       margin: 12px auto 0;
@@ -70,7 +70,7 @@
       @media (max-width: 500px) {
         display: none;
       }
-    }
+    } // Search Field
 
     .search-field--active {
       background: #f9f9f9;
@@ -83,12 +83,12 @@
       margin: 12px 1.4% 0 33px;
       cursor: pointer;
     }
-  }
+  } // Search-Bar Main
 
   .scroll {
     animation: "adjust-height-items" 0.3s forwards;
   }
-}
+} // Search-Bar Container
 
 .search-bar__container--scroll {
   animation: "adjust-height-container" 0.3s forwards;
