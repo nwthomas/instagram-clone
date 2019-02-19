@@ -4,14 +4,23 @@ $mercury: #e2e2e2;
 $white: #ffffff;
 $black: #000000;
 $alabaster: #f9f9f9;
+$baltic-sea: #252328;
 
 // ===================================== Color Assignments
+// Global
+$page-bg: $alabaster;
+
 // Search Bar
 $searchbar-border: $mercury;
 $searchbar-bg: $white;
 $searchbar-divider: $black;
 $search-field-border: $mercury;
 $search-field-bg: $alabaster;
+
+// Posts
+$post-border: $mercury;
+$post-bg: $white;
+$post-icon: $baltic-sea;
 
 // ===================================== General Variables
 $tablet: "(max-width: 800px)";

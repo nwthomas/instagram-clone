@@ -14,22 +14,22 @@
       height: 45px;
       display: flex;
       padding: 18px 3% 0;
-      border-top: 1px solid #e2e2e2;
-      border-left: 1px solid #e2e2e2;
-      border-right: 1px solid #e2e2e2;
+      border-top: 1px solid $post-border;
+      border-left: 1px solid $post-border;
+      border-right: 1px solid $post-border;
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
       -moz-border-top-left-radius: 3px;
       -webkit-border-top-right-radius: 3px;
       -moz-border-top-left-radius: 3px;
       -webkit-border-top-right-radius: 3px;
-      background: white;
+      background: $post-bg;
     }
 
     .post__icon a {
       margin: 8px 1.9%;
       text-decoration: none;
-      color: #252328;
+      color: $post-icon;
       font-size: 1.4rem;
       font-weight: 700;
     }

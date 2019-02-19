@@ -1,8 +1,7 @@
 html {
   font-size: 62.5%;
-  background: #f9f9f9;
+  background: $page-bg;
 }
-
 body {
   margin: 0;
   padding: 0;
@@ -12,21 +11,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 img {
   width: 100%;
   height: auto;
 }
-
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: "source-code-pro", Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
 .App {
   width: 100%;
 }
-
 .body__content {
   width: 100%;
   max-width: 1000px;
@@ -39,7 +34,6 @@ code {
     justify-content: center;
   }
 }
-
 .loading__text {
   display: block;
   margin: 0 auto;
@@ -48,14 +42,12 @@ code {
   margin-top: 150px;
   text-align: center;
 }
-
 .container {
   height: 140px;
   width: 140px;
   margin: 100px auto;
   position: relative;
 }
-
 @keyframes spin {
   0% {
     transform: rotate(0);
@@ -65,7 +57,6 @@ code {
     transform: rotate(360deg);
   }
 }
-
 .loading-img__container {
   width: 100px;
   margin: 30vh auto 0;
