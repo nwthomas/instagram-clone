@@ -127,8 +127,8 @@
           font-weight: 700;
           width: 50px;
           margin: 8px auto;
-          background: white;
-          color: #8e8e8e;
+          background: $login-text-bg;
+          color: $login-text-color;
           text-align: center;
         }
       } // Or Block
@@ -146,7 +146,7 @@
           margin: 1px 0 0 6px;
           font-size: 1.4rem;
           font-weight: 500;
-          color: #31487a;
+          color: $facebook-text-color;
           cursor: pointer;
         }
       }
@@ -169,7 +169,7 @@
       a {
         margin-left: 3px;
         text-decoration: none;
-        color: #3f95ef;
+        color: $signup-link-color;
 
         &:hover {
           text-decoration: underline;

@@ -7,6 +7,8 @@ $alabaster: #f9f9f9;
 $baltic-sea: #252328;
 $gallery: #edecec;
 $picton-blue: #3f95ef;
+$gray: #8e8e8e;
+$chambray: #31487a;
 
 // ===================================== Color Assignments
 // Global
@@ -32,6 +34,10 @@ $login-input-bg: $alabaster;
 $login-btn: $picton-blue;
 $login-text: $white;
 $login-or: $gallery;
+$login-text-bg: $white;
+$login-text-color: $gray;
+$facebook-text-color: $chambray;
+$signup-link-color: $picton-blue;
 
 // Logout Modal
 $logout-bg: $alabaster;
