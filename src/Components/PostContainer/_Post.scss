@@ -4,7 +4,7 @@
   margin: 0 0 50px 3.2%;
   z-index: 2;
 
-  @media (max-width: 1000px) {
+  @media #{$desktop} {
     margin: 0 3.2% 50px;
   }
 

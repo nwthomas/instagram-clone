@@ -5,6 +5,8 @@ $white: #ffffff;
 $black: #000000;
 $alabaster: #f9f9f9;
 $baltic-sea: #252328;
+$gallery: #edecec;
+$picton-blue: #3f95ef;
 
 // ===================================== Color Assignments
 // Global
@@ -22,6 +24,15 @@ $post-border: $mercury;
 $post-bg: $white;
 $post-icon: $baltic-sea;
 
+// Login Page
+$login-form-bg: $white;
+$login-form-bdr: $mercury;
+$login-input-bdr: $gallery;
+$login-input-bg: $alabaster;
+$login-btn: $picton-blue;
+$login-text: $white;
+$login-or: $gallery;
+
 // Logout Modal
 $logout-bg: $alabaster;
 $logout-modal-border: $mercury;
@@ -29,5 +40,6 @@ $logout-modal-bg: $white;
 $logout-btn: $mercury;
 
 // ===================================== General Variables
+$desktop: "(max-width: 1000px)";
 $tablet: "(max-width: 800px)";
 $mobile: "(max-width: 500px)";

@@ -67,7 +67,7 @@
       background-size: 6%;
       background-position: 68px 7px;
 
-      @media (max-width: 500px) {
+      @media #{$mobile} {
         display: none;
       }
     } // Search Field
