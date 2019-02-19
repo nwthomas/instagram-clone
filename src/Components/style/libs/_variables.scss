@@ -2,9 +2,16 @@
 // All color names pulled directly from http://chir.ag/projects/name-that-color/#FFFFFF
 $mercury: #e2e2e2;
 $white: #ffffff;
+$black: #000000;
+$alabaster: #f9f9f9;
 
 // ===================================== Color Assignments
-$searchbar-bg: $mercury;
+// Search Bar
+$searchbar-border: $mercury;
+$searchbar-bg: $white;
+$searchbar-divider: $black;
+$search-field-border: $mercury;
+$search-field-bg: $alabaster;
 
 // ===================================== General Variables
 $tablet: "(max-width: 800px)";

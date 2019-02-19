@@ -187,6 +187,7 @@ class App extends Component {
   };
 
   logout = () => {
+    console.log("Working!");
     const modelSetting = !this.state.isModelTrue ? true : false;
     this.setState({
       isModelTrue: modelSetting

@@ -1,11 +1,11 @@
 .search-bar__container {
   height: 76px;
   width: 100%;
-  border-bottom: 2px solid $searchbar-bg;
+  border-bottom: 2px solid $searchbar-border;
   position: fixed;
   top: 0;
   z-index: 100;
-  background: white;
+  background: $searchbar-bg;
 
   .search-bar__main {
     display: flex;
@@ -37,14 +37,13 @@
       .divider-line {
         width: 6.7%;
         height: 27px;
-        border-right: 1px solid black;
+        border-right: 1px solid $searchbar-divider;
         margin-top: 9px;
       }
 
       .instagram-name-logo {
         margin: 3px 0 0 9%;
         width: 120px;
-        color: black;
         cursor: pointer;
       }
 
@@ -57,13 +56,14 @@
       margin: 12px auto 0;
       width: 210px;
       height: 23px;
-      border: 2px solid #e2e2e2;
+      border: 2px solid $search-field-border;
       border-radius: 3px;
       -moz-border-radius: 3px;
       -webkit-border-radius: 3px;
       text-align: center;
       font-size: 1.4rem;
-      background: #f9f9f9 url(../../images/search.svg) no-repeat scroll 1px 1px;
+      background: $search-field-bg url(../../images/search.svg) no-repeat scroll
+        1px 1px;
       background-size: 6%;
       background-position: 68px 7px;
 
@@ -73,7 +73,7 @@
     } // Search Field
 
     .search-field--active {
-      background: #f9f9f9;
+      background: $search-field-bg;
     }
 
     .icons {
