@@ -3,7 +3,7 @@
   width: 100%;
   height: 100vh;
   position: fixed;
-  background: #f9f9f9;
+  background: $logout-bg;
 
   p {
     width: 100%;
@@ -18,11 +18,11 @@
     height: 150px;
     width: 100%;
     max-width: 400px;
-    border: 1px solid #e2e2e2;
+    border: 1px solid $logout-modal-border;
     border-radius: 3px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
-    background: white;
+    background: $logout-modal-bg;
 
     .logout__btn {
       height: 75px;
@@ -35,13 +35,13 @@
       -webkit-appearance: none;
 
       &:hover {
-        background: #e2e2e2;
+        background: $logout-btn;
         opacity: 0.5;
       }
     }
 
     .no {
-      border-top: 1px solid #e2e2e2;
+      border-top: 1px solid $logout-btn;
     }
   } // Logout Container
 } // Logout Cover
