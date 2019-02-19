@@ -8,6 +8,8 @@ $baltic-sea: #252328;
 $gallery: #edecec;
 $picton-blue: #3f95ef;
 $gray: #8e8e8e;
+$dusty-gray: #979797;
+$silver: #c2c2c2;
 $chambray: #31487a;
 
 // ===================================== Color Assignments
@@ -51,6 +53,14 @@ $comments-bg: $white;
 $comment-username-color: $baltic-sea;
 $post-timestamp-color: $gray;
 $post-border: $mercury;
+
+// Aside
+$aside-username: $black;
+$aside-title: $dusty-gray;
+$aside-border: $mercury;
+$aside-bg: $white;
+$aside-link-color: $gray;
+$copyright-color: $silver;
 
 // ===================================== General Variables
 $desktop: "(max-width: 1000px)";
