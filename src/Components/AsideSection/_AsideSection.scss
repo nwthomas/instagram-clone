@@ -3,7 +3,7 @@
   width: 100%;
   max-width: 295px;
 
-  @media (max-width: 1000px) {
+  @media #{$desktop} {
     display: none;
   }
 
@@ -142,7 +142,7 @@
   justify-content: flex-end;
   margin: 77px 0;
 
-  @media (max-width: 1000px) {
+  @media #{$desktop} {
     display: none;
   }
 }

@@ -19,6 +19,8 @@ const Login = props => {
             </div>
             <form className="login__form" onSubmit={props.appLogin}>
               <input
+                required
+                autoComplete="off"
                 onChange={props.onChange}
                 value={props.username}
                 maxLength="30"
@@ -28,6 +30,8 @@ const Login = props => {
                 placeholder="Username"
               />
               <input
+                required
+                autoComplete="off"
                 onChange={props.onChange}
                 value={props.fullName}
                 maxLength="30"
@@ -37,6 +41,8 @@ const Login = props => {
                 placeholder="Full name"
               />
               <input
+                required
+                autoComplete="off"
                 onChange={props.onChange}
                 value={props.password}
                 maxLength="30"

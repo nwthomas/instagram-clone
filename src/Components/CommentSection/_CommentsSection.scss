@@ -1,14 +1,14 @@
 .comments__section {
-  border-bottom: 1px solid #e2e2e2;
-  border-left: 1px solid #e2e2e2;
-  border-right: 1px solid #e2e2e2;
+  border-bottom: 1px solid $comments-border;
+  border-left: 1px solid $comments-border;
+  border-right: 1px solid $comments-border;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   -moz-border-bottom-left-radius: 3px;
   -webkit-border-bottom-right-radius: 3px;
   -moz-border-bottom-left-radius: 3px;
   -webkit-border-bottom-right-radius: 3px;
-  background: white;
+  background: $comments-bg;
 
   .comments__icons {
     display: flex;
@@ -73,7 +73,7 @@
 
     .user__comment a {
       text-decoration: none;
-      color: #252328;
+      color: $comment-username-color;
       font-size: 1.4rem;
       font-weight: 700;
     }
@@ -90,8 +90,8 @@
     padding-bottom: 12px;
     margin: 0 2.6% 10px;
     font-size: 1.1rem;
-    color: #8e8e8e;
-    border-bottom: 1px solid #e2e2e2;
+    color: $post-timestamp-color;
+    border-bottom: 1px solid $post-border;
   }
 
   .comment__box {
