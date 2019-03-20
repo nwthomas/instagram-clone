@@ -1,0 +1,16 @@
+@mixin flex($direction: row, $justify: flex-start, $align: flex-start) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin border($width: 1px, $style: solid, $color: red) {
+  border: $width $style $color;
+}
+
+@mixin border-radius($size: 1px) {
+  border-radius: $size;
+  -moz-border-radius: $size;
+  -webkit-border-radius: $size;
+}
