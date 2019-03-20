@@ -8,18 +8,16 @@
   background: $searchbar-bg;
 
   .search-bar__main {
-    display: flex;
-    justify-content: space-between;
+    @include flex(row, space-between, flex-start);
     height: 61px;
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
     padding-top: 15px;
-    display: flex;
     position: relative;
 
     .logo__links {
-      display: flex;
+      @include flex();
       top: 0;
       left: 0;
       width: 180px;
@@ -56,10 +54,8 @@
       margin: 12px auto 0;
       width: 210px;
       height: 23px;
-      border: 2px solid $search-field-border;
-      border-radius: 3px;
-      -moz-border-radius: 3px;
-      -webkit-border-radius: 3px;
+      @include border(2px, solid, $search-field-border);
+      @include border-radius(3px);
       text-align: center;
       font-size: 1.4rem;
       background: $search-field-bg url(../../images/search.svg) no-repeat scroll
