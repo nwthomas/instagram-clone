@@ -40,9 +40,7 @@
     }
 
     .thumbnail img {
-      border-radius: 50px;
-      -moz-border-radius: 50px;
-      -webkit-border-radius: 50px;
+      @include border-radius(50px);
     }
   } // Post
 

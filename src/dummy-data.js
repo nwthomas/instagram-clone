@@ -124,13 +124,13 @@ const dummyData = [
     thumbnailUrl:
       "https://secure.gravatar.com/avatar/7d5d1ca9010854c0a1621c24c0dbd599?s=400&d=mm&r=g",
     imageUrl:
-      "https://scontent-sea1-1.cdninstagram.com/vp/599437e75b6ac0177458da3e3cbabc8b/5C862BA6/t51.2885-15/e35/s480x480/43914931_512004459318294_2707712514895493068_n.jpg",
+      "https://331mrnu3ylm2k3db3s1xd1hg-wpengine.netdna-ssl.com/wp-content/uploads/2016/05/Sprudge-CoffeeOnInstagramLittleBlackCoffeeCup-AnnaBrones-Ashley-Tomlinson-2-740x602.jpg",
     likes: 294,
     timestamp: "July 24th 2017, 9:57:01 am",
     comments: [
       {
         username: "_kathycat",
-        text: "This was taken right off the pier. I want to learn to surf!"
+        text: "There's nothing better in the morning than a nice espresso!"
       },
       {
         username: "coffee__nut",

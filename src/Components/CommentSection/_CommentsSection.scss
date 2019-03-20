@@ -11,13 +11,12 @@
   background: $comments-bg;
 
   .comments__icons {
-    display: flex;
-    justify-content: space-between;
+    @include flex(row, space-between);
     height: 30px;
     padding: 6px 2.4% 0;
 
     .heart__comment {
-      display: flex;
+      @include flex();
 
       .comment__icon {
         width: 27px;
@@ -68,7 +67,7 @@
     .user__comment {
       margin: 10px 0 0;
       width: 94.8%;
-      display: flex;
+      @include flex();
     }
 
     .user__comment a {
@@ -100,7 +99,7 @@
     margin: 0 0 16px 2.4%;
 
     form {
-      display: flex;
+      @include flex();
 
       .comment__input {
         width: 90%;

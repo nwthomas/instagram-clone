@@ -18,10 +18,8 @@
     height: 150px;
     width: 100%;
     max-width: 400px;
-    border: 1px solid $logout-modal-border;
-    border-radius: 3px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
+    @include border(1px, solid, $logout-modal-border);
+    @include border-radius(3px);
     background: $logout-modal-bg;
 
     .logout__btn {

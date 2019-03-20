@@ -14,7 +14,7 @@
     margin-right: 3%;
 
     .photo__username {
-      display: flex;
+      @include flex();
       margin-left: 2.5%;
       width: 100%;
 
@@ -23,14 +23,13 @@
         cursor: pointer;
 
         img {
-          border-radius: 50%;
+          @include border-radius(50%);
         }
       }
 
       .username__fullname {
         padding: 9px 5%;
-        display: flex;
-        flex-direction: column;
+        @include flex(column);
         width: 60%;
 
         .aside__username {
@@ -54,17 +53,14 @@
       width: 100%;
       height: 222px;
       margin-top: 15px;
-      border: 1px solid $aside-border;
-      border-radius: 3px;
-      -moz-border-radius: 3px;
-      -webkit-border-radius: 3px;
+      @include border(1px, solid, $aside-border);
+      @include border-radius(3px);
       background: $aside-bg;
 
       .stories__top {
         margin: 15px 5.8% 0;
         font-size: 1.3rem;
-        display: flex;
-        justify-content: space-between;
+        @include flex(row, space-between);
 
         p {
           display: inline-block;
@@ -82,17 +78,14 @@
       width: 100%;
       height: 200px;
       margin-top: 13px;
-      border: 1px solid $aside-border;
-      border-radius: 3px;
-      -moz-border-radius: 3px;
-      -webkit-border-radius: 3px;
+      @include border(1px, solid, $aside-border);
+      @include border-radius(3px);
       background: $aside-bg;
 
       .suggestions__top {
         margin: 15px 5.8% 0;
         font-size: 1.3rem;
-        display: flex;
-        justify-content: space-between;
+        @include flex(row, space-between);
 
         p {
           display: inline-block;
@@ -111,8 +104,7 @@
       font-size: 1.17rem;
       color: $copyright-color;
       line-height: 1.5;
-      display: flex;
-      flex-direction: column;
+      @include flex(column);
 
       .links {
         span {
@@ -138,8 +130,7 @@
 .aside__container--fixed {
   position: fixed;
   max-width: 1000px;
-  display: flex;
-  justify-content: flex-end;
+  @include flex(row, flex-end);
   margin: 77px 0;
 
   @media #{$desktop} {
