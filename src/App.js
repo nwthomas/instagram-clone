@@ -1,11 +1,11 @@
 import React, { Component, Fragment } from "react";
-import { SearchBarContainer } from "./Components/SearchBar";
-import { Logout } from "./Components/Logout";
-import { PostsPage } from "./Components/PostsPage";
-import { Authenticate } from "./Components/Authentication";
+import { SearchBarContainer } from "./components/SearchBar";
+import { Logout } from "./components/Logout";
+import { PostsPage } from "./components/PostsPage";
+import { Authenticate } from "./components/Authentication";
 import loadingImg from "./images/instagram-icon-logo-loading.svg";
 import dummyData from "./dummy-data";
-import "../src/Components/style/App.scss";
+import "../src/components/style/App.scss";
 
 class App extends Component {
   constructor(props) {
