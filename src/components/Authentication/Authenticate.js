@@ -31,10 +31,11 @@ const Authenticate = App => {
     };
 
     loginBtnChange = () => {
+      console.log("Dude");
       const loginButton = document.querySelector(".login__button");
-      this.state.username
-        ? loginButton.classList.add("login__button--active")
-        : loginButton.classList.remove("login__button--active");
+      this.state.username || this.state.fullName || this.state.password
+        ? loginButton.classList.toggle("login__button--active")
+        : loginButton.classList.toggle("login__button--active");
     };
 
     onChange = event => {
@@ -46,13 +47,19 @@ const Authenticate = App => {
           () => this.loginBtnChange()
         );
       } else if (event.target.name === "login-password") {
-        this.setState({
-          password: event.target.value
-        });
+        this.setState(
+          {
+            password: event.target.value
+          },
+          () => this.loginBtnChange()
+        );
       } else if (event.target.name === "login-fullname") {
-        this.setState({
-          fullName: event.target.value
-        });
+        this.setState(
+          {
+            fullName: event.target.value
+          },
+          () => this.loginBtnChange()
+        );
       }
     };
 
