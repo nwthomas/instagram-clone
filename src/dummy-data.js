@@ -79,10 +79,11 @@ const dummyData = [
     ]
   },
   {
-    username: "jshoemaker",
+    username: "hshoemaker",
     thumbnailUrl:
       "https://media1.popsugar-assets.com/files/thumbor/4pA9G0Iqd9NkAzTGprztye_AbRI/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2015/03/06/145/n/4852708/739b036ebaf0da9d_10986022_1536428393289696_1441506879_n/i/Hot-Men-Coffee-Instagram-Pictures.jpg",
-    imageUrl: "http://blog.ink361.com/wp-content/uploads/2015/02/jcgolfing.jpg",
+    imageUrl:
+      "https://www.travellingking.com/wp-content/uploads/2017/12/Must-Take-Instagram-Pictures-on-Any-African-Holiday3.png",
     likes: 389,
     timestamp: "July 20th 2017, 10:32:10 am",
     comments: [
@@ -124,13 +125,13 @@ const dummyData = [
     thumbnailUrl:
       "https://secure.gravatar.com/avatar/7d5d1ca9010854c0a1621c24c0dbd599?s=400&d=mm&r=g",
     imageUrl:
-      "https://331mrnu3ylm2k3db3s1xd1hg-wpengine.netdna-ssl.com/wp-content/uploads/2016/05/Sprudge-CoffeeOnInstagramLittleBlackCoffeeCup-AnnaBrones-Ashley-Tomlinson-2-740x602.jpg",
+      "https://www.collabary.com/wp-content/uploads/2017/06/Break-The-Instagram-%E2%80%93-How-To-Capture-And-Create-The-Perfect-Influencer-Photo.jpg",
     likes: 294,
     timestamp: "July 24th 2017, 9:57:01 am",
     comments: [
       {
         username: "_kathycat",
-        text: "There's nothing better in the morning than a nice espresso!"
+        text: "That water is so blue!"
       },
       {
         username: "coffee__nut",

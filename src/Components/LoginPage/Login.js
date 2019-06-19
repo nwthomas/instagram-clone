@@ -47,7 +47,7 @@ const Login = props => {
                 value={props.password}
                 maxLength="30"
                 className="login__password"
-                type="text"
+                type="password"
                 name="login-password"
                 placeholder="Fake password"
               />
