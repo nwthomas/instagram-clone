@@ -25,17 +25,24 @@ const Authenticate = App => {
     }
 
     appLogin = event => {
+      event.preventDefault();
       localStorage.setItem("username", this.state.username);
       localStorage.setItem("password", this.state.password);
       localStorage.setItem("fullName", this.state.fullName);
+      this.setState({
+        loggedIn: true,
+        username: "",
+        password: "",
+        fullName: ""
+      });
     };
 
     loginBtnChange = () => {
       console.log("Dude");
       const loginButton = document.querySelector(".login__button");
       this.state.username || this.state.fullName || this.state.password
-        ? loginButton.classList.toggle("login__button--active")
-        : loginButton.classList.toggle("login__button--active");
+        ? loginButton.classList.add("login__button--active")
+        : loginButton.classList.remove("login__button--active");
     };
 
     onChange = event => {
