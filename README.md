@@ -1,3 +1,7 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5d6f4a88-a7fe-4b98-8c82-e5c3ea6b5f65/deploy-status)](https://app.netlify.com/sites/instagramclone/deploys)
+
+#
+
 <h1 align="center"><img src="./assets/readme-title.png"></h1>
 
 # Instagram Clone
